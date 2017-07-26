@@ -1,4 +1,4 @@
-# Data Structers and Algorithms Code Challenges
+# Data Structures and Algorithms Code Challenges
 
 Collection of Code 401 final-whiteboard data structure questions.
 
