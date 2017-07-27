@@ -20,6 +20,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Pascal's Triangle](./pascals-triangle) `***`
 - [Zero Matrix](./zero-matrix) `***`
 -----
+- [Add Lists](./add-lists) `**`
 - [Permutation Check](./permutation) `**`
 - [Replace Spaces](./replace-spaces) `**`
 - [String Rotations](./string-rotations) `**`
