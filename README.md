@@ -14,10 +14,10 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 -----
 - [Fewest Stops](./fewest-stops) `****`
 - [Parenthesis Permutations](./paren-permutations) `****`
+- [Pascal's Triangle](./pascals-triangle) `****`
 -----
 - [Animal Shelter](./animal-shelter) `***`
 - [Matrix Rotations](./rotate-matrix) `***`
-- [Pascal's Triangle](./pascals-triangle) `***`
 - [Zero Matrix](./zero-matrix) `***`
 -----
 - [Add Lists](./add-lists) `**`
