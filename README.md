@@ -8,31 +8,31 @@ The rest are generally good to administer.
 
 ## Questions
 
-- Animal Shelter [link](./animal-shelter): 
+- [Animal Shelter](./animal-shelter): 
     * [ ] python 
     * [ ] javascript
     * [ ] swift
     * [ ] objective-C
     * [ ] C#
-- Fewest Steps [link](./fewest-stops): 
+- [Fewest Steps](./fewest-stops): 
     * [ ] python 
     * [ ] javascript
     * [ ] swift
     * [ ] objective-C
     * [ ] C#
-- Nearest Value in BST [link](./nearest-value-bst): 
+- [Nearest Value in BST](./nearest-value-bst): 
     * [x] python 
     * [ ] javascript
     * [ ] swift
     * [ ] objective-C
     * [ ] C#
-- Parenthesis Permutations [link](./paren-permutations): 
+- [Parenthesis Permutations](./paren-permutations): 
     * [x] python 
     * [ ] javascript
     * [ ] swift
     * [ ] objective-C
     * [ ] C#
-- Pascal's Triangle [link](./pascals-triangle): 
+- [Pascal's Triangle](./pascals-triangle): 
     * [x] python 
     * [ ] javascript
     * [ ] swift
