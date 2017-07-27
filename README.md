@@ -8,29 +8,8 @@ The rest are generally good to administer.
 
 ## Questions
 
-- [Animal Shelter](./animal-shelter): 
-    <input type="checkbox" /> Python
-- [Fewest Steps](./fewest-stops): 
-    * [ ] python 
-    * [ ] javascript
-    * [ ] swift
-    * [ ] objective-C
-    * [ ] C#
+- [Animal Shelter](./animal-shelter)
+- [Fewest Steps](./fewest-stops)
 - [Nearest Value in BST](./nearest-value-bst): 
-    * [x] python 
-    * [ ] javascript
-    * [ ] swift
-    * [ ] objective-C
-    * [ ] C#
 - [Parenthesis Permutations](./paren-permutations): 
-    * [x] python 
-    * [ ] javascript
-    * [ ] swift
-    * [ ] objective-C
-    * [ ] C#
 - [Pascal's Triangle](./pascals-triangle): 
-    * [x] python 
-    * [ ] javascript
-    * [ ] swift
-    * [ ] objective-C
-    * [ ] C#
