@@ -9,11 +9,7 @@ The rest are generally good to administer.
 ## Questions
 
 - [Animal Shelter](./animal-shelter): 
-    * [ ] python 
-    * [ ] javascript
-    * [ ] swift
-    * [ ] objective-C
-    * [ ] C#
+    <input type="checkbox" /> Python
 - [Fewest Steps](./fewest-stops): 
     * [ ] python 
     * [ ] javascript
