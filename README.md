@@ -10,13 +10,18 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 
 ## Questions
 
-- [Animal Shelter](./animal-shelter) `***`
-- [Fewest Stops](./fewest-stops) `****`
 - [Nearest Value in BST](./nearest-value-bst) `*****`
+- [Fewest Stops](./fewest-stops) `****`
 - [Parenthesis Permutations](./paren-permutations) `****`
+- [Animal Shelter](./animal-shelter) `***`
+- [Matrix Rotations](./rotate-matrix) `***`
 - [Pascal's Triangle](./pascals-triangle) `***`
+- [Zero Matrix](./zero-matrix) `***`
 - [Permutation Check](./permutation) `**`
 - [Replace Spaces](./replace-spaces) `**`
+- [String Rotations](./string-rotations) `**`
+- [Unique Strings](./unique-string) `**`
 - [Reverse a String](./reverse-string) `*`
 - [String Compression](./compression) `*`
+
 
