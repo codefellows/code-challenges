@@ -18,11 +18,15 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 -----
 - [Animal Shelter](./animal-shelter) `***`
 - [Deduplicate a List](./dedupe-list) `***`
+- [Kth to Last List Element](./kth-element) `***`
+- [List Partition](./list-partition) `***`
 - [Matrix Rotations](./rotate-matrix) `***`
 - [Zero Matrix](./zero-matrix) `***`
 -----
 - [Add Lists](./add-lists) `**`
 - [Cyclic List](./cyclic-list) `**`
+- [Linked List Node Deletion](./node-deletion) `**`
+- [Palindrome List](./list-palindrome) `**`
 - [Permutation Check](./permutation) `**`
 - [Replace Spaces](./replace-spaces) `**`
 - [String Rotations](./string-rotations) `**`
