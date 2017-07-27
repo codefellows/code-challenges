@@ -17,10 +17,12 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Pascal's Triangle](./pascals-triangle) `****`
 -----
 - [Animal Shelter](./animal-shelter) `***`
+- [Deduplicate a List](./dedupe-list) `***`
 - [Matrix Rotations](./rotate-matrix) `***`
 - [Zero Matrix](./zero-matrix) `***`
 -----
 - [Add Lists](./add-lists) `**`
+- [Cyclic List](./cyclic-list) `**`
 - [Permutation Check](./permutation) `**`
 - [Replace Spaces](./replace-spaces) `**`
 - [String Rotations](./string-rotations) `**`
