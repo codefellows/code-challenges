@@ -15,5 +15,6 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Parenthesis Permutations](./paren-permutations) `****`
 - [Pascal's Triangle](./pascals-triangle) `***`
 - [Permutation Check](./permutation) `**`
+- [Replace Spaces](./replace-spaces) `**`
 - [String Compression](./compression) `*`
 
