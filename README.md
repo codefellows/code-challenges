@@ -8,8 +8,13 @@ The rest are generally good to administer.
 
 ## Questions
 
-- Animal Shelter: [] python | [] javascript | [] swift | [] objective-C []C#
-- Fewest Steps: [] python | [] javascript | [] swift | [] objective-C []C#
-- Nearest Value in BST: [x] python | [] javascript | [] swift | [] objective-C []C#
-- Parenthesis Permutations: [x] python | [] javascript | [] swift | [] objective-C []C#
-- Pascal's Triangle: [x] python | [] javascript | [] swift | [] objective-C []C#
+- Animal Shelter: 
+    * [] python | [] javascript | [] swift | [] objective-C []C#
+- Fewest Steps: 
+    * [] python | [] javascript | [] swift | [] objective-C []C#
+- Nearest Value in BST: 
+    * [x] python | [] javascript | [] swift | [] objective-C []C#
+- Parenthesis Permutations: 
+    * [x] python | [] javascript | [] swift | [] objective-C []C#
+- Pascal's Triangle: 
+    * [x] python | [] javascript | [] swift | [] objective-C []C#
