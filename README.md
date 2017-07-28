@@ -22,6 +22,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Kth to Last List Element](./kth-element) `***`
 - [List Partition](./list-partition) `***`
 - [Matrix Rotations](./rotate-matrix) `***`
+- [Paths Through a Grid](./grid-paths) `***`
 - [Zero Matrix](./zero-matrix) `***`
 -----
 - [Add Lists](./add-lists) `**`
