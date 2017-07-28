@@ -22,4 +22,5 @@ You can only move down or to the right
     [ ][ ][ ]
     [ ][ ][ ]
     [ ][ ][ ]
+6 paths
 ```
