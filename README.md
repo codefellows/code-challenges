@@ -17,6 +17,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Pascal's Triangle](./pascals-triangle) `****`
 -----
 - [Animal Shelter](./animal-shelter) `***`
+- [Converging Lists](./converging-lists) `***`
 - [Deduplicate a List](./dedupe-list) `***`
 - [Kth to Last List Element](./kth-element) `***`
 - [List Partition](./list-partition) `***`
