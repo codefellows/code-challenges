@@ -2,7 +2,7 @@
 
 This is a collection of our favorite whiteboard data structure/algorithm questions.
 
-These questions are intended do be delivered by the instructional team to evaluate individual student readiness for job interviews.
+These questions are intended to be delivered by the instructional team to evaluate student readiness for job interviews.
 
 Question difficulty is estimated on a scale of one to five `*`'s. `*` is an "easy" problem, whereas `****` and `*****` are going to take some work and is of a high enough difficulty for a **final** whiteboarding exam.
 
