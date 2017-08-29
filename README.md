@@ -34,7 +34,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [String Rotations](./string-rotations) `**`
 - [Unique Strings](./unique-string) `**`
 -----
+- [Acronym Generator](./acronym) `*`
 - [Reverse a String](./reverse-string) `*`
 - [String Compression](./compression) `*`
-
 
