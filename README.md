@@ -11,8 +11,10 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 ## Questions
 
 - [Nearest Value in BST](./nearest-value-bst) `*****`
+- [Towers of Hanoi](./hanoi) `*****`
 -----
 - [Fewest Stops](./fewest-stops) `****`
+- [Letter Permutations](./letter-permutations) `****`
 - [Parenthesis Permutations](./paren-permutations) `****`
 - [Pascal's Triangle](./pascals-triangle) `****`
 -----
