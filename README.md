@@ -33,6 +33,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Replace Spaces](./replace-spaces) `**`
 - [String Rotations](./string-rotations) `**`
 - [Unique Strings](./unique-string) `**`
+- [Recursive Fibonacci](./recursive-fib) `**`
 -----
 - [Acronym Generator](./acronym) `*`
 - [Recursive Sum](./recursive-sum) `*`
