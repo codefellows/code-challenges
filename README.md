@@ -30,10 +30,11 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Linked List Node Deletion](./node-deletion) `**`
 - [Palindrome List](./list-palindrome) `**`
 - [Permutation Check](./permutation) `**`
+- [Recursive Fibonacci](./recursive-fib) `**`
+- [Recursive Factorial](./recursive-factorial) `**`
 - [Replace Spaces](./replace-spaces) `**`
 - [String Rotations](./string-rotations) `**`
 - [Unique Strings](./unique-string) `**`
-- [Recursive Fibonacci](./recursive-fib) `**`
 -----
 - [Acronym Generator](./acronym) `*`
 - [Recursive Sum](./recursive-sum) `*`
