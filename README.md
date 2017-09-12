@@ -35,6 +35,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Recursive Fibonacci](./recursive-fib) `**`
 - [Recursive Factorial](./recursive-factorial) `**`
 - [Replace Spaces](./replace-spaces) `**`
+- [Serialize an HTML Form](./serialize-object) `**`
 - [String Rotations](./string-rotations) `**`
 - [Unique Strings](./unique-string) `**`
 -----
@@ -42,4 +43,3 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Recursive Sum](./recursive-sum) `*`
 - [Reverse a String](./reverse-string) `*`
 - [String Compression](./compression) `*`
-
