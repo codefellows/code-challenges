@@ -26,6 +26,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Matrix Rotations](./rotate-matrix) `***`
 - [Paths Through a Grid](./grid-paths) `***`
 - [Zero Matrix](./zero-matrix) `***`
+- [Zip Together Two Linked Lists](./zip-lists) `***`
 -----
 - [Add Lists](./add-lists) `**`
 - [Cyclic List](./cyclic-list) `**`
