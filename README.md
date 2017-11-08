@@ -12,6 +12,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 
 - [Nearest Value in BST](./nearest-value-bst) `*****`
 - [Towers of Hanoi](./hanoi) `*****`
+- [Command-Line Database](./custom-db) `*****`
 -----
 - [Fewest Stops](./fewest-stops) `****`
 - [Letter Permutations](./letter-permutations) `****`

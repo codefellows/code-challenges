@@ -24,37 +24,21 @@ Get items with a line giving the key requested, your program should respond with
 
 If the input is invalid, your program should respond with ‘ERROR’
 
-Sample Input
-SIZE 3
-GET foo
-SET foo 1
-GET foo
-SET foo 1.1
-GET foo
-SET spam 2
-GET spam
-SET ham third
-SET parrot four
-GET foo
-GET spam
-GET ham
-GET ham parrot
-GET parrot
-EXIT
-
-Expected Output
-SIZE OK
-NOTFOUND
-SET OK
-GOT 1
-SET OK
-GOT 1.1
-SET OK
-GOT 2
-SET OK
-SET OK
-NOTFOUND
-GOT 2
-GOT third
-ERROR
-GOT four
+| Sample Input | Expected Output |
+| --- | --- |
+| SIZE 3 | SIZE OK |
+| GET foo | NOTFOUND |
+| SET foo 1 | SET OK |
+| GET foo | GOT 1 |
+| SET foo 1.1 | SET OK |
+| GET foo | GOT 1.1 |
+| SET spam 2 | SET OK |
+| GET spam | GOT 2 |
+| SET ham third | SET OK |
+| SET parrot four | SET OK |
+| GET foo | NOTFOUND |
+| GET spam | GOT 2 |
+| GET ham | GOT third |
+| GET ham parrot | ERROR |
+| GET parrot | GOT four |
+| EXIT |  |
