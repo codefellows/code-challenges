@@ -12,11 +12,11 @@ The commands that should be supported are as follows:
 
 | Command | Operation |
 | --- | --- |
-| CREATE <tablename> | Creates a table in your database |
-| ADD TO <tablename> col1=val1, col2=val2, col3=val3 | Adds new data to your database; any column not filled in gets the language-specific NULL value by default |
-| GET FROM <tablename> col1, col2, col3 | Retrieves data from the specified columns of the specified table |
-| GET FROM <tablename> * | Retrieves all the data from the specified table |
-| QUIT | Closes the database |
+| `CREATE <tablename>` | Creates a table in your database |
+| `ADD TO <tablename> col1=val1, col2=val2, col3=val3` | Adds new data to your database; any column not filled in gets the language-specific NULL value by default |
+| `GET FROM <tablename> col1, col2, col3` | Retrieves data from the specified columns of the specified table |
+| `GET FROM <tablename> *` | Retrieves all the data from the specified table |
+| `QUIT` | Closes the database |
 
 The data that it takes in doesn't need to be permanently persisted in any way.
 It's only persisted in the objects you build.
