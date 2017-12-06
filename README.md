@@ -14,6 +14,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Towers of Hanoi](./hanoi) `*****`
 - [Command-Line Database](./custom-db) `*****`
 - [Least-Recently Used Cache](./least-recently-used-cache) `*****`
+- [Number Clusters](./number_clusters) `*****`
 -----
 - [Fewest Stops](./fewest-stops) `****`
 - [Letter Permutations](./letter-permutations) `****`
