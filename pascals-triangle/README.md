@@ -1,8 +1,13 @@
-# Data Structures and Algorithms Code Challenges
+# Pascal's Triangle
 
-Collection of whiteboard data structure/algorithm questions.
+Pascal's Triangle is a collection of numbers that take a particular form:
 
-These questions are intended do be delivered the instructional team to evaluate individual student readiness for job interviews.
-Questions flagged with **FINAL** in this README are of a high enough difficulty for a final whiteboarding exam.
-The rest are generally good to administer.
+```
+    [1]
+   [1,1]
+  [1,2,1]
+ [1,3,3,1]
+[1,4,6,4,1]
+```
 
+The rows continue on forever. Assuming that row N = 1 corresponds to that first row, `[1]`, write a function that takes in N as a value and prints the first N rows of Pascal's Triangle. Note, you don't have to format the text to be indented like it is above, but each row should be contained within an array like it is above.
