@@ -15,7 +15,7 @@ The rows continue on forever. Assuming that row N = 1 corresponds to that first 
 Ex: N = 4
 
 ```
-[[1], [1,1], [1,2,1], [1,3,3,1]]
+pascal(4) => [[1], [1,1], [1,2,1], [1,3,3,1]]
 ```
 
 Note, you don't have to format the text to be indented like it is above, but each row should be contained within an array like it is above.
