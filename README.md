@@ -48,3 +48,4 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Recursive Sum](./recursive-sum) `*`
 - [Reverse a String](./reverse-string) `*`
 - [String Compression](./compression) `*`
+- [Tech Abbreviations](./tech-abbreviations) `*`
