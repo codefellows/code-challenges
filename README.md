@@ -35,6 +35,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Add Lists](./add-lists) `**`
 - [Cyclic List](./cyclic-list) `**`
 - [Linked List Node Deletion](./node-deletion) `**`
+- [Dutch Flag Partition](./dutch-flag) `**`
 - [Palindrome List](./list-palindrome) `**`
 - [Permutation Check](./permutation) `**`
 - [Recursive Fibonacci](./recursive-fib) `**`
