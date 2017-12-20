@@ -29,7 +29,10 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Kth to Last List Element](./kth-element) `***`
 - [List Partition](./list-partition) `***`
 - [Matrix Rotations](./rotate-matrix) `***`
+- [Roman Numbers to Integers](./roman-numbers) `***`
 - [Paths Through a Grid](./grid-paths) `***`
+- [Stringify a Number](./stringify-number) `***`
+- [Validate a URL](./validate-urls) `***`
 - [Winning in Tic-Tac-Toe](./tictactoe-winner) `***`
 - [Zero Matrix](./zero-matrix) `***`
 - [Zip Together Two Linked Lists](./zip-lists) `***`
