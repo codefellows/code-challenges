@@ -18,6 +18,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 -----
 - [Fewest Stops](./fewest-stops) `****`
 - [Letter Permutations](./letter-permutations) `****`
+- [Number Series with Largest Sum](./largest-sum) `****`
 - [Parenthesis Permutations](./paren-permutations) `****`
 - [Pascal's Triangle](./pascals-triangle) `****`
 -----
@@ -29,6 +30,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [List Partition](./list-partition) `***`
 - [Matrix Rotations](./rotate-matrix) `***`
 - [Paths Through a Grid](./grid-paths) `***`
+- [Winning in Tic-Tac-Toe](./tictactoe-winner) `***`
 - [Zero Matrix](./zero-matrix) `***`
 - [Zip Together Two Linked Lists](./zip-lists) `***`
 -----
@@ -42,6 +44,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Recursive Fibonacci](./recursive-fib) `**`
 - [Recursive Factorial](./recursive-factorial) `**`
 - [Replace Spaces](./replace-spaces) `**`
+- [Reverse Words](./reverse-words) `**`
 - [Serialize an HTML Form](./serialize-object) `**`
 - [String Rotations](./string-rotations) `**`
 - [Unique Strings](./unique-string) `**`
