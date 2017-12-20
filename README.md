@@ -15,6 +15,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Command-Line Database](./custom-db) `*****`
 - [Least-Recently Used Cache](./least-recently-used-cache) `*****`
 - [Number Clusters](./number_clusters) `*****`
+- [Root to Leaf in a Binary Tree](./binary-root-leaf) `*****`
 -----
 - [Fewest Stops](./fewest-stops) `****`
 - [Letter Permutations](./letter-permutations) `****`
@@ -23,6 +24,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Pascal's Triangle](./pascals-triangle) `****`
 -----
 - [Animal Shelter](./animal-shelter) `***`
+- [Balanced BST](./balanced-bst) `***`
 - [Converging Lists](./converging-lists) `***`
 - [Deduplicate a List](./dedupe-list) `***`
 - [Job Scraper](./job-scraper) `***`
@@ -42,6 +44,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Linked List Node Deletion](./node-deletion) `**`
 - [Dutch Flag Partition](./dutch-flag) `**`
 - [Deduplicate an Array](./dedupe-array) `**`
+- [Furthest Child from BST Root](./furthest-child) `**`
 - [Palindrome List](./list-palindrome) `**`
 - [Permutation Check](./permutation) `**`
 - [Recursive Fibonacci](./recursive-fib) `**`
