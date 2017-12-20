@@ -15,6 +15,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Command-Line Database](./custom-db) `*****`
 - [Least-Recently Used Cache](./least-recently-used-cache) `*****`
 - [Number Clusters](./number_clusters) `*****`
+- [Reconstruct BST from In-Order Traversal](./reconstructed-tree) `****`
 - [Root to Leaf in a Binary Tree](./binary-root-leaf) `*****`
 -----
 - [Fewest Stops](./fewest-stops) `****`
