@@ -1,4 +1,7 @@
 # Minesweeper
+
+![Minesweeper screenshot](./minesweeper-beginner-complete.png)
+
 Given a 2D array that represents a minefield with randomly placed mines write
 a function that returns a 2D array where each index contains the number of
 mines at the 8 positions (4 sides, 4 corners too) around that location.
