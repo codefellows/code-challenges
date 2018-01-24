@@ -55,6 +55,8 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Serialize an HTML Form](./serialize-object) `**`
 - [String Rotations](./string-rotations) `**`
 - [Unique Strings](./unique-string) `**`
+- [Minesweeper](./minesweeper-mine-counting/) `**`
+- [Theater Seating](./theater-seating/) `**`
 -----
 - [Acronym Generator](./acronym) `*`
 - [Recursive Sum](./recursive-sum) `*`
