@@ -1,9 +1,9 @@
 let MINEFIELD = [
-  [null, null, null, null, 'mine'],
-  [null, null, null, null, 'mine'],
-  ['mine', null, null, null, null],
-  [null, null, null, 'mine', null],
-  [null, 'mine', null, null, null]
+  [null, null, null, null, '*'],
+  [null, null, null, null, '*'],
+  ['*', null, null, null, null],
+  [null, null, null, '*', null],
+  [null, '*', null, null, null]
 ]
 
 // bounds-checking helper function
@@ -26,18 +26,18 @@ function getCell(grid, row, col) {
 // array where each cell has a number representing
 // how many mines that cell touches, 
 // let MINEFIELD = [
-//   [null, null, null, null, 'mine']
-//   [null, null, null, null, 'mine']
-//   ['mine', null, null, null, null]
-//   [null, null, null, 'mine', null]
-//   [null, 'mine', null, null, null]
+//   [null, null, null, null, '*']
+//   [null, null, null, null, '*']
+//   ['*', null, null, null, null]
+//   [null, null, null, '*', null]
+//   [null, '*', null, null, null]
 // ]
 // [
-//  [0, 0, 0, 2, *]
-//  [1, 1, 0, 2, *]
-//  [*, 1, 1, 2, 2]
-//  [2, 2, 2, *, 1]
-//  [1, *, 2, 1, 1]
+//  [0, 0, 0, 2, 9]
+//  [1, 1, 0, 2, 9]
+//  [9, 1, 1, 2, 2]
+//  [2, 2, 2, 9, 1]
+//  [1, 9, 2, 1, 1]
 // ]
 function markMines(field) {
   for (let row = 0; row < field.length; row++) {
@@ -50,36 +50,36 @@ function markMines(field) {
 }
 
 function countMines(field, row, col) {
-  // we must check for both 'mine' and 9 since we're modifying
+  // we must check for both '*' and 9 since we're modifying
   // the original array.
-  if (field[row][col] === 'mine' || field[row][col] === 9) {
+  if (field[row][col] === '*' || field[row][col] === 9) {
     return 9;
   }
   let result = 0;
   
-  if (getCell(field, row - 1, col) === 'mine') { // north
+  if (getCell(field, row - 1, col) === '*') { // north
     result++
   }
-  if (getCell(field, row + 1, col) === 'mine') { // south
+  if (getCell(field, row + 1, col) === '*') { // south
     result++
   }
-  if (getCell(field, row, col + 1) === 'mine') { // east
+  if (getCell(field, row, col + 1) === '*') { // east
     result++
   }
-  if (getCell(field, row, col - 1) === 'mine') { // west
+  if (getCell(field, row, col - 1) === '*') { // west
     result++
   }
   
-  if (getCell(field, row - 1, col - 1) === 'mine') { // nw
+  if (getCell(field, row - 1, col - 1) === '*') { // nw
     result++
   }
-  if (getCell(field, row - 1, col + 1) === 'mine') { // ne
+  if (getCell(field, row - 1, col + 1) === '*') { // ne
     result++
   }
-  if (getCell(field, row + 1, col - 1) === 'mine') { // sw
+  if (getCell(field, row + 1, col - 1) === '*') { // sw
     result++
   }
-  if (getCell(field, row + 1, col + 1) === 'mine') { // se
+  if (getCell(field, row + 1, col + 1) === '*') { // se
     result++
   }
   
