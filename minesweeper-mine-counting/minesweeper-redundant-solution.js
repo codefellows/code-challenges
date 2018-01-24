@@ -4,7 +4,7 @@ let MINEFIELD = [
   ['*', null, null, null, null],
   [null, null, null, '*', null],
   [null, '*', null, null, null]
-]
+];
 
 // bounds-checking helper function
 // returns an "empty" value if the coordinate doesn't exist.
@@ -17,7 +17,7 @@ function getCell(grid, row, col) {
   } else if (col >= grid[row].length) {
     return empty;
   } else {
-    return grid[row][col]
+    return grid[row][col];
   }
 }
 
@@ -42,11 +42,11 @@ function getCell(grid, row, col) {
 function markMines(field) {
   for (let row = 0; row < field.length; row++) {
     for (let col = 0; col < field[row].length; col++) {
-      field[row][col] = countMines(field, row, col)
+      field[row][col] = countMines(field, row, col);
     }
   }
   
-  return field
+  return field;
 }
 
 function countMines(field, row, col) {
@@ -58,52 +58,52 @@ function countMines(field, row, col) {
   let result = 0;
   
   if (getCell(field, row - 1, col) === '*') { // north
-    result++
+    result++;
   }
   if (getCell(field, row + 1, col) === '*') { // south
-    result++
+    result++;
   }
   if (getCell(field, row, col + 1) === '*') { // east
-    result++
+    result++;
   }
   if (getCell(field, row, col - 1) === '*') { // west
-    result++
+    result++;
   }
   
   if (getCell(field, row - 1, col - 1) === '*') { // nw
-    result++
+    result++;
   }
   if (getCell(field, row - 1, col + 1) === '*') { // ne
-    result++
+    result++;
   }
   if (getCell(field, row + 1, col - 1) === '*') { // sw
-    result++
+    result++;
   }
   if (getCell(field, row + 1, col + 1) === '*') { // se
-    result++
+    result++;
   }
   
   return result;
 }
 
-console.log('Minefield:')
-console.log(MINEFIELD)
-console.log()
+console.log('Minefield:');
+console.log(MINEFIELD);
+console.log();
 
-let result = markMines(MINEFIELD)
+let result = markMines(MINEFIELD);
 
-console.log('Result:')
-console.log(result)
-console.log()
+console.log('Result:');
+console.log(result);
+console.log();
 
-simpleAssert(result[0][0], 0)
-simpleAssert(result[1][0], 1)
-simpleAssert(result[1][1], 1)
-simpleAssert(result[3][0], 2)
-simpleAssert(result[4][4], 1)
+simpleAssert(result[0][0], 0);
+simpleAssert(result[1][0], 1);
+simpleAssert(result[1][1], 1);
+simpleAssert(result[3][0], 2);
+simpleAssert(result[4][4], 1);
 
 function simpleAssert(actual, expected) {
   if (expected !== actual) {
-    console.log("expected:", expected, "actual:", actual)
+    console.log("expected:", expected, "actual:", actual);
   }
 }

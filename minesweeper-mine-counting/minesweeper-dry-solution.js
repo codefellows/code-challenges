@@ -83,24 +83,24 @@ function countMines(field, row, col) {
   return totalNearbyMines;
 }
 
-console.log('Minefield:')
-console.log(MINEFIELD)
-console.log()
+console.log('Minefield:');
+console.log(MINEFIELD);
+console.log();
 
-let result = markMines(MINEFIELD)
+let result = markMines(MINEFIELD);
 
-console.log('Result:')
-console.log(result)
-console.log()
+console.log('Result:');
+console.log(result);
+console.log();
 
-simpleAssert(result[0][0], 0)
-simpleAssert(result[1][0], 1)
-simpleAssert(result[1][1], 1)
-simpleAssert(result[3][0], 2)
-simpleAssert(result[4][4], 1)
+simpleAssert(result[0][0], 0);
+simpleAssert(result[1][0], 1);
+simpleAssert(result[1][1], 1);
+simpleAssert(result[3][0], 2);
+simpleAssert(result[4][4], 1);
 
 function simpleAssert(actual, expected) {
   if (expected !== actual) {
-    console.log("expected:", expected, "actual:", actual)
+    console.log("expected:", expected, "actual:", actual);
   }
 }
