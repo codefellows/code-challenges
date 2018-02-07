@@ -27,7 +27,6 @@ let findRootToLeafPathWithSum = (root,targetWeight) => {
 };
 
 let findRootToLeafPathWithSum_helper = (root,weightSoFar,targetWeight) => {
-  //vinicio - it's a leaf
   if(root.left === null && root.right === null){
     console.log(`Finding a leaf with weight ${root.weight + weightSoFar}`);
 
