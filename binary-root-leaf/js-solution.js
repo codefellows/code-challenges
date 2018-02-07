@@ -27,7 +27,8 @@ three.right = five;
 // SOLUTION
 //------------------------------------------------------------
 // Vinicio: An iterative solution is also possible by creating 
-//          a helper data structure with node and weightSoFar properties.
+//          a helper data structure with node and weightSoFar 
+//          properties.
 //------------------------------------------------------------
 let findRootToLeafPathWithSum = (root,targetWeight) => {
   return findRootToLeafPathWithSum_helper(root,0,targetWeight);
