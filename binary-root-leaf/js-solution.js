@@ -1,5 +1,7 @@
 'use strict';
-
+//------------------------------------------------------------
+// SETUP
+//------------------------------------------------------------
 class BinaryTree{
   constructor(value,weight){
     this.value = value;
@@ -21,7 +23,9 @@ one.right = three;
 
 three.left = four;
 three.right = five;
-
+//------------------------------------------------------------
+// SOLUTION
+//------------------------------------------------------------
 let findRootToLeafPathWithSum = (root,targetWeight) => {
   return findRootToLeafPathWithSum_helper(root,0,targetWeight);
 };
