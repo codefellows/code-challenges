@@ -1,7 +1,7 @@
 'use strict';
-//------------------------------------------------------------
+//----------------------------------------------------------------------------------
 // SETUP
-//------------------------------------------------------------
+//----------------------------------------------------------------------------------
 class BinaryTree{
   constructor(value,weight){
     this.value = value;
@@ -23,12 +23,13 @@ one.right = three;
 
 three.left = four;
 three.right = five;
-//------------------------------------------------------------
+//----------------------------------------------------------------------------------
 // SOLUTION
-//------------------------------------------------------------
-// Vinicio: An iterative solution is also possible by creating 
-//          a helper data structure with node and weightSoFar 
-//          properties.
+//----------------------------------------------------------------------------------
+// Vinicio: An iterative solution is also possible by creating a helper data structure 
+//          with node and weightSoFar properties.
+//          Time Complexity : O(n)
+//          Space Complexity : O(lg n)
 //------------------------------------------------------------
 let findRootToLeafPathWithSum = (root,targetWeight) => {
   return findRootToLeafPathWithSum_helper(root,0,targetWeight);
