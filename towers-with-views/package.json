@@ -1,0 +1,12 @@
+{
+  "name": "towers-with-views",
+  "version": "1.0.0",
+  "description": "Write a function that accepts some representation of tall city towers overlooking a pretty beach front. Return a collection of towers that are tall enough to see the pretty beach, i.e. towers that are taller than all other towers between themselves and the beach.",
+  "main": "towers-with-views.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
