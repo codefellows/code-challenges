@@ -34,6 +34,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Matrix Rotations](./rotate-matrix) `***`
 - [Roman Numbers to Integers](./roman-numbers) `***`
 - [Paths Through a Grid](./grid-paths) `***`
+- [Sendable Messages](./sendable-messages) `***`
 - [Stringify a Number](./stringify-number) `***`
 - [Validate a URL](./validate-urls) `***`
 - [Winning in Tic-Tac-Toe](./tictactoe-winner) `***`
@@ -55,6 +56,8 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Serialize an HTML Form](./serialize-object) `**`
 - [String Rotations](./string-rotations) `**`
 - [Unique Strings](./unique-string) `**`
+- [Minesweeper](./minesweeper-mine-counting/) `**`
+- [Theater Seating](./theater-seating/) `**`
 -----
 - [Acronym Generator](./acronym) `*`
 - [Recursive Sum](./recursive-sum) `*`
