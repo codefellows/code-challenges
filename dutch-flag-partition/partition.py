@@ -3,7 +3,7 @@ def partition(arr, idx):
     left = []
     right = []
     for i in range(len(arr)):
-        elif arr[i] == arr[idx]:
+        if arr[i] == arr[idx]:
             final.append(arr[i])
         elif arr[i] < arr[idx]:
             left.append(arr[i])
