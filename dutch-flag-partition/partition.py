@@ -1,10 +1,8 @@
 def partition(arr, idx):
-    final = [arr[idx]]
+    final = []
     left = []
     right = []
     for i in range(len(arr)):
-        if i == idx:
-            continue
         elif arr[i] == arr[idx]:
             final.append(arr[i])
         elif arr[i] < arr[idx]:
