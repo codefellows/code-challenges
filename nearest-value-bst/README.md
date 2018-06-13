@@ -4,9 +4,19 @@
 
 We are helping a software team create a project management app. They'd like your help with the time estimation feature. 
 
-They are constantly getting data from 1000s of actual finished projects, containing how many user stories are on the project, and the total number of hours the project took to complete. 
+They are constantly getting data from 1000s of actual finished projects. This data contains:
+ - how many user stories were in project
+ - and the total number of hours the project took to complete. 
 
-When a new project is proposed, we need you to give a quick rough estimate: report the hours from the existing project data that most closely matches the new project's number of user stories. You must return your result as efficiently as possible. 
+When a **new** project is proposed, we need you to give a quick rough estimate: report the hours from the existing project data that most closely matches the new project's number of user stories. 
+
+You must return your result as efficiently as possible. 
+
+## Requirements
+
+1. Identify how you'd like to hold this data (they should discuss the efficiency of their proposed solution)
+1. Create an algorithm for retrieving a rough estimate
+1. Code up your algorithm as accurately as possible
 
 ## Example Inputs & Outputs
 
@@ -39,9 +49,9 @@ Students may assume a binary search tree, and even one that self-balances (to mi
 Students should come up with some way of keeping all the project data associated together. They should, therefore, be asked to design the "node" to be stored in their binary search tree.
 
 In case of a new value that exactly splits the difference between two previous
-results, it is acceptable to return either previous result found.
+results, it is acceptable to return either previous project found.
 
-Run time complexity for the algorithm they create should be O(log n), since half of the existing data can be disregarded after every comparison. Space complexity should be O(1): No additional data structures are needed to run the search. 
+Run time complexity for the algorithm they create should be O(lg n), since half of the existing data can be disregarded after every comparison. Space complexity should be O(1): No additional data structures are needed to run the search. 
 
 ## Resources
 
