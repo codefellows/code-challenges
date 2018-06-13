@@ -51,7 +51,7 @@ Students should come up with some way of keeping all the project data associated
 In case of a new value that exactly splits the difference between two previous
 results, it is acceptable to return either previous project found.
 
-Run time complexity for the algorithm they create should be O(lg n), since half of the existing data can be disregarded after every comparison. Space complexity should be O(1): No additional data structures are needed to run the search. 
+Run time complexity for the algorithm they create should be O(lg n), since half of the existing data can be disregarded after every comparison. Space complexity for an interative solution should be O(1): No additional data structures are needed to run the search. A recursive solution may traverse to a leaf node, which would take O(lg n) space on the call stack. 
 
 ## Resources
 
