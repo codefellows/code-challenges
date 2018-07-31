@@ -14,7 +14,7 @@ namespace DSQuestions
 		 * h = height of the call stack for recursion	 
 		*/
 
-		public void GetWeight(Tree tree, int targetWeight)
+		public void GetWeight(Node tree, int targetWeight)
 		{
 			bool isEqual = AddWeight(tree.Root, 0, targetWeight);
 
@@ -28,7 +28,7 @@ namespace DSQuestions
 			}
 		}
 
-		public bool AddWeight(Node root, int currentWeight, int targetWeight)
+		public bool GetWeight(Node root, int targetWeight, int currentWeight)
 		{
 			if (root.LeftChild == null && root.RightChild == null)
 			{
@@ -43,7 +43,7 @@ namespace DSQuestions
 			{
 				if (root.LeftChild != null)
 				{
-					if (AddWeight(root.LeftChild, currentWeight + (int)root.Value, targetWeight))
+					if (GetWeight(root.LeftChild, currentWeight + (int)root.Value, targetWeight))
 					{
 						return true;
 					};
@@ -51,7 +51,7 @@ namespace DSQuestions
 
 				if (root.RightChild != null)
 				{
-					if (AddWeight(root.RightChild, currentWeight + (int)root.Value, targetWeight))
+					if (GetWeight(root.RightChild, currentWeight + (int)root.Value, targetWeight))
 					{
 						return true;
 					}
