@@ -8,7 +8,7 @@ namespace DSQuestions
 	class PathWeight
 	{
 		/*
-		 * Big O Space: O(n)
+		 * Big O Time: O(n)
 		 * n = the number of possible nodes
 		 * Big O Space: O(h)
 		 * h = height of the call stack for recursion	 
