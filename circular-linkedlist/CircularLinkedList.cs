@@ -69,12 +69,13 @@ namespace CircularLinkedList
 		// Worst case, there is not a circular reference and we are adding all of the nodes into the hashset, therefore adding more space. 
 		static bool IsCircularHash(LinkList linkList)
 		{
+			Node current = linkList.Head;
 			HashSet<Node> myNodes = new HashSet<Node>();
-			while (linkList.Current.Next != null)
+			while (Current.Next != null)
 			{
-				if (myNodes.Add(linkList.Current))
+				if (myNodes.Add(current))
 				{
-					linkList.Current = linkList.Current.Next;
+					current = current.Next;
 				}
 				else
 				{
