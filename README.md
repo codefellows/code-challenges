@@ -23,6 +23,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Number Series with Largest Sum](./largest-sum) `****`
 - [Parenthesis Permutations](./paren-permutations) `****`
 - [Pascal's Triangle](./pascals-triangle) `****`
+- [Circular Linked List Detection](./circular-linkedlist) `****`
 -----
 - [Animal Shelter](./animal-shelter) `***`
 - [Balanced BST](./balanced-bst) `***`
