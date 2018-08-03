@@ -2,7 +2,7 @@
 
 Create a function that determines if a linked list has a circular reference. 
 
-**Source:** Robert W Floyd's "*Tortoise and the Hare* Algorithm
+**Source:** Robert W Floyd's "*Tortoise and the Hare*" Algorithm
 
 ## Notes to the Interviewer
 
