@@ -6,11 +6,15 @@ Create a function that determines if a linked list has a circular reference.
 
 ## Notes to the Interviewer
 
-Students can use the default `Node` class usually provided within data structures. 
+Students can use the default `Node` class usually provided within data structures.
 
 The `Node` class has the following properties:
 1. Value
 2. Next
+
+The student may also use the "built in" linked list if they ask. They may have access to:
+1. Head node
+2. Add methods
 
 Do not let the student "modify" the `Node` class. They must keep it intact and not 
 add any additional properties to the class. 
@@ -20,9 +24,9 @@ a data type to continue
 
 ***Are duplicates a possiblity?*** : Yes. 
 
-***Do I have access to a linked List traversal***: You must implement the traversal yourself. Only
+***Do I have access to any linked List traversals?***: You must implement the traversal yourself. Only
 assume you have a `Node` class with the default properties available (see above).
- 
+
 
 There are a couple different approaches to this problem. The first solution is the 
 most optimal for both time/space, while the second solution utulizes external data structures. 
