@@ -19,7 +19,7 @@ add any additional properties to the class.
 ***What is the data type of the Linked list***: Doesn't matter, but let's assume integers if you need
 a data type to continue
 
-***Are duplicates a possiblity?***: Yes. 
+***Are duplicates a possiblity?*** : Yes. 
 
 ***Do I have access to a linked List traversal***: You must implement the traversal yourself. Only
 assume you have a `Node` class with the default properties available (see above).
