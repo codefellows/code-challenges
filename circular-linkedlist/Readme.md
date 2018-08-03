@@ -28,8 +28,7 @@ a data type to continue
 
 **Are duplicates a possiblity?** : Yes. 
 
-**Do I have access to any linked List traversals?**: You must implement the traversal yourself. Only
-assume you have a `Node` class with the default properties available (see above).
+**Do I have access to any linked List traversals?**: You must implement the traversal yourself
 
 
 There are a couple different approaches to this problem. The first solution is the 
