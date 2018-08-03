@@ -16,6 +16,10 @@ The student may also use the "built in" linked list if they ask. They may have a
 1. Head node
 2. Add methods
 
+The student may also have access to a built in "HashSet". They do not need to come up
+with the hash on their own. They can simply utulize the already built in `Add(key)` method  to add a value
+to the hashset. 
+
 Do not let the student "modify" the `Node` class. They must keep it intact and not 
 add any additional properties to the class. 
 
