@@ -1,7 +1,6 @@
 # Circular Linked List
 
-Given a singly linked list, determine if it contains a 
-circular reference.
+Create a function that determines if a linked list has a circular reference. 
 
 **Source:** Robert W Floyd's "*Tortoise and the Hare* Algorithm
 
