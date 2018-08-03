@@ -20,7 +20,7 @@ The student may also have access to a built in *HashSet<T>*. They do not need to
 with the hash on their own. They can simply utulize the already built in `Add(key)` method  to add a value
 to the hashset. 
 
-***Can I moify the Node class?***: No. Do not let the student "modify" the `Node` class. They must keep it intact and not 
+***Can I modify the Node class?***: No. Do not let the student "modify" the `Node` class. They must keep it intact and not 
 add any additional properties to the class. 
 
 ***What is the data type of the Linked list***: Doesn't matter, but let's assume integers if you need
