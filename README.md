@@ -12,6 +12,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 
 - [Nearest Value in BST](./nearest-value-bst) `*****`
 - [Towers of Hanoi](./hanoi) `*****`
+- [Benford's Law](./benfords-law) `*****`
 - [Command-Line Database](./custom-db) `*****`
 - [Least-Recently Used Cache](./least-recently-used-cache) `*****`
 - [Number Clusters](./number_clusters) `*****`
