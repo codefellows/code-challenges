@@ -2,6 +2,9 @@
 
 Create a function that determines if a linked list has a circular reference. 
 
+A circular reference is defined as a Linked List that, at any point, has a "Next" property that points 
+to any other node in the list. Not neccesarily the head node. 
+
 **Source:** Robert W Floyd's "*Tortoise and the Hare*" Algorithm
 
 ## Notes to the Interviewer
