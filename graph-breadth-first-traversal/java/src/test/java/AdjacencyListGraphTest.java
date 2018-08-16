@@ -98,9 +98,9 @@ public class AdjacencyListGraphTest {
         firstLevel.add(ellensberg);
 
         Set<Node<String>> secondLevel = new HashSet<>();
-        firstLevel.add(seattle);
-        firstLevel.add(spokane);
-        firstLevel.add(yakima);
+        secondLevel.add(seattle);
+        secondLevel.add(spokane);
+        secondLevel.add(yakima);
 
         Set<Node<String>> thirdLevel = new HashSet<>();
         thirdLevel.add(bellingham);
