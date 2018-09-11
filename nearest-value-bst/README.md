@@ -14,7 +14,7 @@ You must return your result as efficiently as possible.
 
 ## Requirements
 
-1. Identify how you'd like to hold this data (they should discuss the efficiency of their proposed solution)
+1. Identify how you'd like to hold this data, considering the efficiency of both inserting data and returning an estimate. 
 1. Create an algorithm for retrieving a rough estimate
 1. Code up your algorithm as accurately as possible
 
@@ -44,14 +44,13 @@ Rough estimate from the existing data set: _612 hours, based on 153 stories_.
 
 ## Notes to the Interviewer
 
-Students may assume a binary search tree, and even one that self-balances (to minimize the amortized cost of searching an unbalanced tree).
+Students may assume a binary search tree, and even one that self-balances (to minimize the amortized cost of searching an unbalanced tree). Using a sorted array is not quite as efficient for adding a new record, but if efficiency is correctly identified, it shouldn't be more than a 1-point deduciton. 
 
 Students should come up with some way of keeping all the project data associated together. They should, therefore, be asked to design the "node" to be stored in their binary search tree.
 
-In case of a new value that exactly splits the difference between two previous
-results, it is acceptable to return either previous project found.
+In case of a new value that exactly splits the difference between two previous results, it is acceptable to return either previous project found.
 
-Run time complexity for the algorithm they create should be O(lg n), since half of the existing data can be disregarded after every comparison. Space complexity for an interative solution should be O(1): No additional data structures are needed to run the search. A recursive solution may traverse to a leaf node, which would take O(lg n) space on the call stack. 
+Run time complexity for the estimate algorithm they create should be O(lg n), since half of the existing data can be disregarded after every comparison. Space complexity for an interative solution should be O(1): No additional data structures are needed to run the search. A recursive solution may traverse to a leaf node, which would take O(lg n) space on the call stack. 
 
 ## Resources
 
