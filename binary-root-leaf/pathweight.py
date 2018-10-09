@@ -8,10 +8,10 @@ class TreeNode:
     self.right = right;
 
 # Algorithm
-def hasPathWeight(root, weight):
+def has_path_weight(root, weight):
   if root == None: return False
   if (root.left == None) and (root.right == None): return weight == root.value
-  return any([hasPathWeight(x, weight - root.value) for x in (root.left, root.right)])
+  return any([has_path_weight(x, weight - root.value) for x in (root.left, root.right)])
 
 # Validation
 
@@ -28,10 +28,10 @@ tree = TreeNode(
   TreeNode(4, TreeNode(6), TreeNode(7))
 )
 
-assert(hasPathWeight(tree, 9))
-assert(hasPathWeight(tree, 11))
-assert(hasPathWeight(tree, 12))
-assert(not hasPathWeight(tree, 4))
-assert(not hasPathWeight(tree, 1))
-assert(not hasPathWeight(tree, 5))
-assert(not hasPathWeight(tree, 10))
+assert(has_path_weight(tree, 9))
+assert(has_path_weight(tree, 11))
+assert(has_path_weight(tree, 12))
+assert(not has_path_weight(tree, 4))
+assert(not has_path_weight(tree, 1))
+assert(not has_path_weight(tree, 5))
+assert(not has_path_weight(tree, 10))
