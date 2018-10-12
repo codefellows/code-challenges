@@ -1,7 +1,3 @@
-
-- **Stretch**: Return every node with a path weight equal to the given integer sum
-- **Stretch**: Consider the tree with negative and positive numbers
-
 # Find a Root to Leaf Path with Specified Sum
 _Source: From Elements of Programming Interviews in Python, Q 9.6_
 
@@ -52,6 +48,10 @@ Each node has a path weight, but we are only looking for leaf nodes that match t
 The solution should look like a traversal, with some additional info passed along. This could be recursive or iterative. 
 
 One approach would be to add a `weight` property to each node, to cache it's path weight. However, this would need to be updated (for some subset of nodes) if there are any changes in the tree. So, first solve the problem without being able to write the leaf path weights to a cache (whether that's in the node, or external to the tree). 
+
+## Stretch goals
+
+Return every node with a path weight equal to the given integer sum.
 
 ## Resources
 
