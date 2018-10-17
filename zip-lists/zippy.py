@@ -11,7 +11,18 @@ class Node:
     def __str__(self):
         return "%d -> %s" % (self.val, str(self.next))
 
-def combine(l1, l2):
+def nodecombine(head1, head2):
+    if not head1:
+        return head2
+    elif not head2:
+        return head1
+    else:
+        return Node(head1.val, nodecombine(head2, head1.next))
+
+def rec_combine(l1, l2):
+    return LinkedList(nodecombine(l1.head, l2.head))
+
+def iter_combine(l1, l2):
     output = LinkedList()
     curr1 = l1.head
     curr2 = l2.head
@@ -39,9 +50,8 @@ def combine(l1, l2):
 list1 = LinkedList(Node(1, Node(2, Node(3, Node(4)))))
 list2 = LinkedList(Node(3, Node(2)))
 
-zipped = combine(list1, list2)
+print iter_combine(list1, list2)
+print rec_combine(list1, list2)
 
-print zipped
-
-zipped2 = combine(list2, list1)
-print zipped2
+print iter_combine(list2, list1)
+print rec_combine(list2, list1)
