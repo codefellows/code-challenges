@@ -7,7 +7,7 @@ You are given a stack that contains `PlaneTicket` instances; each ticket has an 
 ## Example input/output (do not give unless explicitly asked)
 
 Input: [ JFK->IAD, SFO->JFK, IAD->ORD, SEA->SFO ]
-Output: [ SEA, SFO, JFK, ORD ]
+Output: [ SEA, SFO, JFK, IAD, ORD ]
 
 ## Notes
 
