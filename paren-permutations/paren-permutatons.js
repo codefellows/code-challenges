@@ -1,5 +1,5 @@
 function allParens(num) {
-  
+
   if ( num === 0 ) { return []; }
   if ( num === 1 ) { return ['()']; }
 
@@ -9,7 +9,7 @@ function allParens(num) {
 
   parensList.forEach(parens => {
     let back = parens + '()'; 
-    let front = parens + '()'; 
+    let front = '()' + parens; 
     let self = '(' + parens + ')';
 
     !output.includes(back) && output.push(back);
