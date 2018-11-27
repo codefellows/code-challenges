@@ -26,6 +26,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Pascal's Triangle](./pascals-triangle) `****`
 - [Circular Linked List Detection](./circular-linkedlist) `****`
 - [Flight Path Reconstruction](./reconstructed-flight-path) `****`
+- [Merge Sort](./merge-sort) `****`
 -----
 - [Animal Shelter](./animal-shelter) `***`
 - [Balanced BST](./balanced-bst) `***`
