@@ -25,12 +25,13 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Parenthesis Permutations](./paren-permutations) `****`
 - [Pascal's Triangle](./pascals-triangle) `****`
 - [Circular Linked List Detection](./circular-linkedlist) `****`
+- [Flight Path Reconstruction](./reconstructed-flight-path) `****`
+- [Merge Sort](./merge-sort) `****`
 -----
 - [Animal Shelter](./animal-shelter) `***`
 - [Balanced BST](./balanced-bst) `***`
 - [Converging Lists](./converging-lists) `***`
 - [Deduplicate a List](./dedupe-list) `***`
-- [Flight Path Reconstruction](./reconstructed-flight-path) `***`
 - [Job Scraper](./job-scraper) `***`
 - [Kth to Last List Element](./kth-element) `***`
 - [List Partition](./list-partition) `***`
