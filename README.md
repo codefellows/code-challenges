@@ -10,6 +10,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 
 ## Questions
 
+### 5-star:
 - [Nearest Value in BST](./nearest-value-bst) `*****`
 - [Towers of Hanoi](./hanoi) `*****`
 - [Benford's Law](./benfords-law) `*****`
@@ -18,7 +19,9 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Number Clusters](./number_clusters) `*****`
 - [Reconstruct BST from In-Order Traversal](./reconstructed-tree) `****`
 - [Root to Leaf in a Binary Tree](./binary-root-leaf) `*****`
------
+
+### 4-star:
+
 - [Fewest Stops](./fewest-stops) `****`
 - [Letter Permutations](./letter-permutations) `****`
 - [Number Series with Largest Sum](./largest-sum) `****`
@@ -27,7 +30,9 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Circular Linked List Detection](./circular-linkedlist) `****`
 - [Flight Path Reconstruction](./reconstructed-flight-path) `****`
 - [Merge Sort](./merge-sort) `****`
------
+
+### 3-star:
+
 - [Animal Shelter](./animal-shelter) `***`
 - [Balanced BST](./balanced-bst) `***`
 - [Converging Lists](./converging-lists) `***`
@@ -44,7 +49,9 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Winning in Tic-Tac-Toe](./tictactoe-winner) `***`
 - [Zero Matrix](./zero-matrix) `***`
 - [Zip Together Two Linked Lists](./zip-lists) `***`
------
+
+### 2-star:
+
 - [Add Lists](./add-lists) `**`
 - [Cyclic List](./cyclic-list) `**`
 - [Linked List Node Deletion](./node-deletion) `**`
@@ -62,7 +69,9 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Unique Strings](./unique-string) `**`
 - [Minesweeper](./minesweeper-mine-counting/) `**`
 - [Theater Seating](./theater-seating/) `**`
------
+
+### 1-star:
+
 - [Acronym Generator](./acronym) `*`
 - [Recursive Sum](./recursive-sum) `*`
 - [Reverse a String](./reverse-string) `*`
