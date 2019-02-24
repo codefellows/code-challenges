@@ -51,7 +51,7 @@ namespace ReconFlightPath
             }
 
             // Find the first ticket in the trip by comparing the origins against destinations hashset
-            foreach (var city in allCities)
+            foreach (PlaneTicket city in allCities)
             {
                 // if there is not a match between an origin and a destination...this means we found our first ticket
                 if (!destinations.Contains(city.Origin)) // O(n) time
