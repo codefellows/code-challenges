@@ -58,9 +58,7 @@ class LinkedList {
       }
       current = current.next;
     }
-
   }
-
 }
 
 let list = new LinkedList();
