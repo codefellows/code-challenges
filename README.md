@@ -27,6 +27,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Number Series with Largest Sum](./largest-sum) `****`
 - [Parenthesis Permutations](./paren-permutations) `****`
 - [Pascal's Triangle](./pascals-triangle) `****`
+- [Room Escape](./room-escape) `****`
 - [Circular Linked List Detection](./circular-linkedlist) `****`
 - [Flight Path Reconstruction](./reconstructed-flight-path) `****`
 - [Merge Sort](./merge-sort) `****`
