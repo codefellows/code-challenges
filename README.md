@@ -27,7 +27,6 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Number Series with Largest Sum](./largest-sum) `****`
 - [Parenthesis Permutations](./paren-permutations) `****`
 - [Pascal's Triangle](./pascals-triangle) `****`
-- [Room Escape](./room-escape) `****`
 - [Circular Linked List Detection](./circular-linkedlist) `****`
 - [Flight Path Reconstruction](./reconstructed-flight-path) `****`
 - [Merge Sort](./merge-sort) `****`
@@ -43,6 +42,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [List Partition](./list-partition) `***`
 - [Matrix Rotations](./rotate-matrix) `***`
 - [Roman Numbers to Integers](./roman-numbers) `***`
+- [Room Escape](./room-escape) `***`
 - [Paths Through a Grid](./grid-paths) `***`
 - [Sendable Messages](./sendable-messages) `***`
 - [Stringify a Number](./stringify-number) `***`
