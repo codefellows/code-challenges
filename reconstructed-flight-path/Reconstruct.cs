@@ -16,7 +16,11 @@ namespace ReconFlightPath
             tickets.Push(new PlaneTicket("SFO", "JFK"));
             tickets.Push(new PlaneTicket("IAD", "ORD"));
 
-            ReconstructPath(tickets);
+            List<string> path = ReconstructPath(tickets);
+            foreach (string route in path)
+            {
+                System.Console.Write($"{route} ->");
+            }
         }
 
         public static List<string> ReconstructPath(Stack<PlaneTicket> path)
