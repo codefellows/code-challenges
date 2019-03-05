@@ -42,6 +42,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [List Partition](./list-partition) `***`
 - [Matrix Rotations](./rotate-matrix) `***`
 - [Roman Numbers to Integers](./roman-numbers) `***`
+- [Room Escape](./room-escape) `***`
 - [Paths Through a Grid](./grid-paths) `***`
 - [Sendable Messages](./sendable-messages) `***`
 - [Stringify a Number](./stringify-number) `***`
