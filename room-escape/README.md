@@ -49,3 +49,7 @@ Two basic ways of determining that you're stuck in a loop:
     - a `HashSet<Pair<Integer, Integer>>` or equivalent. Space O(n) but could be less if the path to the outside is short.
     - if allowed to modify the input array, by changing the char at visited spaces to `Z` or any other unused character. Space O(1), but destroys the input.
 2. Don't keep track of anything, and iterate until you either get to the outside of the grid, or you've iterated (n + 1) times (aka `grid.length * grid[0].length + 1` times); at that point, you know you've repeated at least one room and must be stuck in a cycle. Time O(n), space O(1), non-destructive; but doesn't exit early once a cycle is found.
+
+## Stretch Goal/Extension
+
+If the candidate finishes the problem quickly, a natural extension is to return the path taken to escape, either as a list of coordinates, or as a String of all the char directions followed.
