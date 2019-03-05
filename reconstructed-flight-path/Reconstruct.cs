@@ -25,13 +25,13 @@ namespace ReconFlightPath
 
         public static List<string> ReconstructPath(Stack<PlaneTicket> path)
         {
-            // Create a Hashtable (Dictionary is C#'s version of a Hashtable)
+            // Create a Hashtable (Dictionary is C#'s version of a Hashtable, note the strongly typed)
             Dictionary<string, PlaneTicket> tickets = new Dictionary<string, PlaneTicket>();
 
             //Create a hashset to find the first ticket in the list
             HashSet<string> destinations = new HashSet<string>();
 
-            // This will be used to hold the items from our stack
+            // This will be used to hold the items from our stack, it's easier to traverse a list vs a stack
             List<PlaneTicket> allCities = new List<PlaneTicket>();
 
             // Our return List of cities visited (including final destination)
@@ -44,27 +44,28 @@ namespace ReconFlightPath
             {
                 PlaneTicket reference = path.Pop();
 
-                // add each ticket to the dictionary.
+                // add each ticket to the dictionary, basewd off of orgin for key, and actual ticket for value.
                 tickets.Add(reference.Origin, reference); // O(n) space
 
-                // In order to find the first, let's put the destinations in the stack. 
+                // In order to find the first, let's put the destinations in the Hashset for later use. 
                 destinations.Add(reference.Destination); // O(n) Space
 
-                // add each plane ticket to the collection to later determine first ticket
+                // this is the actual transfer from the stack to the list for easier traversal. We will traverse this list to find the first ticket. 
                 allCities.Add(reference); // o(n) space
             }
 
-            // Find the first ticket in the trip by comparing the origins against destinations hashset
-            foreach (var city in allCities)
+            // Find the first ticket in the trip by comparing the origins against destination's hashset
+            foreach (PlaneTicket city in allCities)
             {
                 // if there is not a match between an origin and a destination...this means we found our first ticket
                 if (!destinations.Contains(city.Origin)) // O(n) time
                 {
+                    // Set our reference to the ticket that we know is the 1st
                     nextTicket = city;
                 }
             }
 
-            // add the first destination to the return list
+            // add the first destination to the return list (where the user started their trip)
             outputCities.Add(nextTicket.Origin);
 
             // build out the rest of the output cities 
