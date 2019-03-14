@@ -75,7 +75,7 @@ of possible words, in this class it should include the word `"rocks"`.
   * Use helper methods to encapsulate different major steps of building up the
     tree
 * Add methods to interact with the `T9Tree`
-  * `digitsToWords()` 
+  * `digitsToWords()`
     * accepts a string representing a sequence of digits
     * returns a list of words at the node reached by traversing the tree
       according to the digits.
@@ -102,11 +102,3 @@ functionality, and return value.
 * Add a `.wordToCode()` method that returns a character sequence for a given
   word.
 * Expose an `.addWord()` method so people can add words after the tree is built.
-
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-susan`
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to
-  your pull request
