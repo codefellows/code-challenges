@@ -46,7 +46,7 @@ You'll need to complete this challenge in two steps:
 
 Download a [Scrabble dictionary](https://raw.githubusercontent.com/zeisler/scrabble/master/db/dictionary.csv)
 and use it to populate the dictionary. Iterate over every word in the dictionary,
-map each letter to it's corresponding keypad number, traverse the tree according
+map each letter to its corresponding keypad number, traverse the tree according
 to the list of numbers for a word, and store the word in the list at that node.
 
 Write a method `text()` that accepts a String like `"76257"` and returns a list
