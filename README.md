@@ -10,6 +10,9 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 
 ## Questions
 
+### 10-star, full lab assignment difficulty/complexity:
+- [Trie Implementation](./trie-implementation) `**********`
+
 ### 5-star:
 - [Nearest Value in BST](./nearest-value-bst) `*****`
 - [Towers of Hanoi](./hanoi) `*****`
