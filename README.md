@@ -22,6 +22,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Number Clusters](./number_clusters) `*****`
 - [Reconstruct BST from In-Order Traversal](./reconstructed-tree) `****`
 - [Root to Leaf in a Binary Tree](./binary-root-leaf) `*****`
+- [Validate whether a tree is a Binary Search Tree](./validate-bst) `*****`
 
 ### 4-star:
 
