@@ -33,7 +33,7 @@ namespace ReconstructTree
 			return null;
 		}
 	}
-
+ 
 	class Node
 	{
 		public Node LeftChild { get; set; }
