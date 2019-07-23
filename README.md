@@ -26,6 +26,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 
 ### 4-star:
 
+- [Linked List Odometer](./odometer) `****`
 - [Fewest Stops](./fewest-stops) `****`
 - [Letter Permutations](./letter-permutations) `****`
 - [Number Series with Largest Sum](./largest-sum) `****`
