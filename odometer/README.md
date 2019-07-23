@@ -9,7 +9,7 @@ Input:
     4 -> 3 -> 9 -> 5
 
 Output:
-    4 -> 3 -> 9 -> 5
+    4 -> 3 -> 9 -> 6
 ```
 
 ```javascript  
@@ -25,7 +25,7 @@ Input:
     9 -> 9 -> 9 -> 9
 
 Output:
-    1 -> 0 -> 0 -> 0 -> 9
+    1 -> 0 -> 0 -> 0 -> 0
 ```
 
 ### Questions and Answers
