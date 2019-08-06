@@ -54,7 +54,7 @@ One approach would be to add a `weight` property to each node, to cache it's pat
 ### Efficiency
 
 Time: 
- - Worst case: O(n * n) 
+ - Worst case: O(n) 
    - Every node needs to be visited if the tree doesn't contain a leaf with the given path weight
  - Best case: O(1)
    - Unlikley, but possible: The first node checked is a leaf node, and has the desired path weight
