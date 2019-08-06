@@ -58,8 +58,8 @@ Time:
    - Every node needs to be visited if the tree doesn't contain a leaf with the given path weight
  - Best case: O(1)
    - Unlikley, but possible: The first node checked is a leaf node, and has the desired path weight
- - Average case: O(L/2 * H) where L is number of leaf nodes, and H is height of tree, ideally/roughly: O(n lg n)
-   - Hopefully, the tree is balanced. Then, your likely to find it after checking about half the leaf nodes.
+ - Average case: O(L/2 * H) where L is number of leaf nodes, and H is height of tree, ideally/roughly: O(n)
+   - Hopefully, the tree is balanced. Then, you are likely to find it after checking about half the leaf nodes.
 
 ## Stretch goals
 
