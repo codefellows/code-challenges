@@ -43,11 +43,23 @@ Example output: `True`
 
 ## Notes to the Interviewer
 
+### Solution notes
+
 Each node has a path weight, but we are only looking for leaf nodes that match the input value. 
 
 The solution should look like a traversal, with some additional info passed along. This could be recursive or iterative. 
 
 One approach would be to add a `weight` property to each node, to cache it's path weight. However, this would need to be updated (for some subset of nodes) if there are any changes in the tree. So, first solve the problem without being able to write the leaf path weights to a cache (whether that's in the node, or external to the tree). 
+
+### Efficiency
+
+Time: 
+ - Worst case: O(n) 
+   - Every node needs to be visited if the tree doesn't contain a leaf with the given path weight
+ - Best case: O(1)
+   - Unlikley, but possible: The first node checked is a leaf node, and has the desired path weight
+ - Average case: O(L/2 * H) where L is number of leaf nodes, and H is height of tree, ideally/roughly: O(n)
+   - Hopefully, the tree is balanced. Then, you are likely to find it after checking about half the leaf nodes.
 
 ## Stretch goals
 
