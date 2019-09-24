@@ -5,7 +5,7 @@ _Source: From Elements of Programming Interviews in Python, Q 9.12_
 You are given an array of values that were the result of an in-order traversal on a balanced binary search tree.
 Write a function that takes in that array as an argument and reconstructs a balanced tree that would've given you those values in that order.
 
-## Notes 
+## Notes to the Interviewer
 
 The code for the solution is not that challenging: it's the binary search algorithm, used to add nodes to a tree. 
 
