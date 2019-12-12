@@ -36,10 +36,9 @@ Example input tree:
       |
       — 61
 ```
-Example input search: `173`
+Example input search: `170`; example output: `True`
 
-Example output: `True`
-
+Example input search: `173`; example output: `False`
 
 ## Notes to the Interviewer
 
