@@ -20,7 +20,7 @@ Input: "LIX"
 Output: 59
 
 Input: "MCCIX"
-Output: 709
+Output: 1209
 ```
 
 - **Stretch**: If a given string is invalid, raise an appropriate exception
