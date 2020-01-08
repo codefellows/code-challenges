@@ -81,4 +81,6 @@ define function rainbowText (input: string, palette: array):
 end define
 ```
 
+Here is a [solution]('./rainbowText.js') using JavaScript and the DOM API.
+
 The time complexity should not be greater than O(_n_). If it is, something's wrong with your algorithm: you don't need multiple `for` loops to make this work.
