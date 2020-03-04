@@ -23,6 +23,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Reconstruct BST from In-Order Traversal](./reconstructed-tree) `****`
 - [Root to Leaf in a Binary Tree](./binary-root-leaf) `*****`
 - [Validate whether a tree is a Binary Search Tree](./validate-bst) `*****`
+- [Reverse Level Order Traversal of a Binary Tree](./reverse-level-order-tree) `*****`
 
 ### 4-star:
 
