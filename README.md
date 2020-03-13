@@ -46,6 +46,7 @@ If you have a solution for a problem that doesn't yet have one, just add it with
 - [Kth to Last List Element](./kth-element) `***`
 - [List Partition](./list-partition) `***`
 - [Matrix Rotations](./rotate-matrix) `***`
+- [Rainbow Text](./rainbow-text) `***`
 - [Roman Numbers to Integers](./roman-numbers) `***`
 - [Room Escape](./room-escape) `***`
 - [Paths Through a Grid](./grid-paths) `***`
