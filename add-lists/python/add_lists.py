@@ -2,6 +2,11 @@ from linked_list import LinkedList
 
 
 def add_lists(*list_nums):
+    """
+    input: varying number of numbers where each number 
+    is contained in a linked list
+    output: sum of the numbers in linked list
+    """
 
     sum = 0
 
