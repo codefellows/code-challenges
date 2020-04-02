@@ -41,7 +41,7 @@ class LinkedList(object):
         output = ""
         curr = self.head
         while curr:
-            output += f'[{curr.val}] -> '
+            output += f"[{curr.val}] -> "
             curr = curr.next
         return output[:-4]
 
