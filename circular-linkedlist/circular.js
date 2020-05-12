@@ -14,7 +14,6 @@ class LinkedList {
   }
 
   append(value) {
-
     if (!this.head) {
       this.head = new Node(value);
       return;
@@ -30,11 +29,9 @@ class LinkedList {
 
   // Put the whole node into the Map?
   isCircularUsingHash() {
-    
     let seen = new Map();
     let current = this.head;
-    let previous = current;
-    
+   
     while (current) {
       if ( seen.has(current) ) {
         return true;
@@ -51,7 +48,8 @@ class LinkedList {
 
   // leader and trailer method
   isCircularUsingTrailer() {
-    
+    if (this.head === null) { return false; }
+
     let leader = this.head.next;
     let trailer = this.head;
 
@@ -65,7 +63,8 @@ class LinkedList {
 
   }
 
-  isCircularUsingRecursion(leader=this.head,trailer=this.head.next) {
+  isCircularUsingRecursion(leader=this.head,trailer=(this.head===null ? null: this.head.next)) {
+    if (leader === null) { return false; }
     if ( leader === trailer ) { return true; }
     else {
       if ( trailer.next && trailer.next.next ) {
