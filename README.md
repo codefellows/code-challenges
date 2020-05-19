@@ -18,6 +18,7 @@ If you have a solution for a problem that doesn't yet have one, please add it vi
 - [Towers of Hanoi](./hanoi) `*****`
 - [Benford's Law](./benfords-law) `*****`
 - [Command-Line Database](./custom-db) `*****`
+- [Islands on a Grid](./islands-on-a-grid) `*****`
 - [Least-Recently Used Cache](./least-recently-used-cache) `*****`
 - [Number Clusters](./number_clusters) `*****`
 - [Reconstruct BST from In-Order Traversal](./reconstructed-tree) `****`
