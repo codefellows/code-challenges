@@ -6,14 +6,32 @@ These questions are intended to be delivered by the instructional team to evalua
 
 Question difficulty is estimated on a scale of one to five `*`'s. `*` is an "easy" problem, whereas `****` and `*****` are going to take some work and is of a high enough difficulty for a **final** whiteboarding exam.
 
-If you have a solution for a problem that doesn't yet have one, please add it via PR in a folder named by the language, with the proper file format so that others know which languages are covered.
+If you have a challenge to add, please submit it via PR. Every challenge should:
+
+- Have "Notes to the interviewer" with things to push on, prod, expect, etc.
+- Include clear statement of the problem, any constraints, and example input and output to provide, should the inerviewee ask. 
+- Reference where the problem is sourced from.
+
+If you have a solution for a problem that doesn't yet have one, please add it via PR.
+
+- Every language's implementation should be in a subdirectory of the challenge folder, named according to the language's style: `[language]/[module-name].[ext]` 
+  - i.e. `javascript/fizz-buzz.js` 
+  - or `python/fizz_buzz.py`
+- Every solution should be "complete" and "runnable" and "tested"
+  - Constructor
+  - Required Methods
+  - Dependencies (i.e. if you need a Node class, it should be there)
+  - Create a sample set of data
+  - Run the method with that data or run tests and show proper output
+
+Thanks for your contributions!
 
 ## Questions
 
-### 10-star, full lab assignment difficulty/complexity:
-- [Trie Implementation](./trie-implementation) `**********`
+### 6-star, full lab assignment difficulty/complexity:
+- [Trie Implementation](./trie-implementation) `******`
 
-### 5-star:
+### 5-star, 401 final exam, round 1 level of difficulty:
 - [Nearest Value in BST](./nearest-value-bst) `*****`
 - [Towers of Hanoi](./hanoi) `*****`
 - [Benford's Law](./benfords-law) `*****`
