@@ -1,4 +1,4 @@
-class BinarySearchTree(LoggingThing, BinaryTree):
+class BinarySearchTree:
     def __init__(self):
         self.root = None
 
@@ -72,7 +72,7 @@ def find_nearest_neighbor(tree, target):
     if closest_node:
         return closest_node.value
 
-    raise ValueError('bunk')
+    raise ValueError('Something went very wrong')
 
 
 def find_nearest_neighbor_iterative(tree, val):
@@ -99,7 +99,9 @@ def find_nearest_neighbor_iterative(tree, val):
         else:
             current = current.right
 
-    
-    return neighbor and neighbor.value
+    if not neighbor:
+        raise ValueError('Something went very wrong')
+
+    return neighbor.value
 
     
