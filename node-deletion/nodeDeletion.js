@@ -27,13 +27,17 @@ function removeNode(list, valueToRemove) {
   }
 
   let current = list.head;
+
+  if (current.value === valueToRemove) {
+    list.head = current.next;
+    return list;
+  }
+
   let previous = null;
 
+
   while (current) {
-    if (current.value === valueToRemove && current === list.head) {
-      list.head = current.next;
-      break;
-    } else if (current.value === valueToRemove) {
+    if (current.value === valueToRemove) {
       previous.next = current.next;
       break;
     }
@@ -49,7 +53,7 @@ function removeNode(list, valueToRemove) {
 
 
 /**
- * 
+ * Test function for asserting that two lists are equal in javascript
  * @param {String} string - description for the test.
  * @param {Any} value - a value to argue for removal.
  * @param {LinkedList} testList - LinkedList that will operated against.
@@ -63,28 +67,37 @@ const test = (string, value, testList, assertList) => {
   console.log(string, test === expected);
 }
 
-let list1 = new LinkedList();
-list1.head = new Node(1);
-list1.head.next = new Node(2);
-list1.head.next.next = new Node(3);
+let valueInHead = new LinkedList();
+valueInHead.head = new Node(2);
+valueInHead.head.next = new Node(3);
 
-let list2 = new LinkedList();
-list2.head = new Node(1);
-list2.head.next = new Node(3);
+let valueInHeadExpect = new LinkedList();
+valueInHeadExpect.head = new Node(3);
 
-test('Should remove value from a small list', 2, list1, list2);
+test('Should remove the head from the list', 2, valueInHead, valueInHeadExpect);
 
-list1 = new LinkedList();
-list1.head = new Node(1);
-list1.head.next = new Node(2);
-list1.head.next.next = new Node(3);
-list1.head.next.next.next = new Node(4);
-list1.head.next.next.next.next = new Node(3);
+let simpleList = new LinkedList();
+simpleList.head = new Node(1);
+simpleList.head.next = new Node(2);
+simpleList.head.next.next = new Node(3);
 
-list2 = new LinkedList();
-list2.head = new Node(1);
-list2.head.next = new Node(2);
-list2.head.next.next = new Node(4);
-list2.head.next.next.next = new Node(3);
+let simpleListExpect = new LinkedList();
+simpleListExpect.head = new Node(1);
+simpleListExpect.head.next = new Node(3);
 
-test('should remove one item from the list even with duplicate values', 3, list1, list2);
+test('Should remove value from a small list', 2, simpleList, simpleListExpect);
+
+let duplicateList = new LinkedList();
+duplicateList.head = new Node(1);
+duplicateList.head.next = new Node(2);
+duplicateList.head.next.next = new Node(3);
+duplicateList.head.next.next.next = new Node(4);
+duplicateList.head.next.next.next.next = new Node(3);
+
+let duplicateExpect = new LinkedList();
+duplicateExpect.head = new Node(1);
+duplicateExpect.head.next = new Node(2);
+duplicateExpect.head.next.next = new Node(4);
+duplicateExpect.head.next.next.next = new Node(3);
+
+test('should remove one item from the list even with duplicate values', 3, duplicateList, duplicateExpect);
