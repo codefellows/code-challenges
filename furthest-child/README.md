@@ -1,13 +1,11 @@
 # Find the Furthest Child from the BST's Root
 
-Write a function that takes a binary search tree as an argument.
-The tree isn't necessarily balanced.
+Write a function that takes a binary search tree as an argument. The tree isn't necessarily balanced.
 
-(Interviewer choose one from below)\
-*Option 1* Return the value of the node that is furthest from the root of the tree.\
-*Option 2* Return the value of the node that is the furthest from the value of the root of the tree.
+Interviewer choose one from below:
 
-- **Stretch**: Instead, return the value of the node that is furthest from the root of the tree in number of steps away.
+- *Option 1*: Return the value of the node that is the furthest number of steps from the root of the tree.
+- *Option 2*: Return the value of the node whose value is the greatest difference from the value of the root node.
 
 ![searchable tree](furthestChild.png)
 
