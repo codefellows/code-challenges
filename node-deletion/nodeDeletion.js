@@ -15,42 +15,20 @@ class LinkedList {
 
 /**
  * Remove a node in the middle of a singly linked list given only the value of the node to remove
- *  O(n) time complexity, at worst case we need to look at every node in the list.
- *  O(1) space complexity, at worst case we are creating a constant 2 pointers to reference 2 nodes, 
- * @param {LinkedList} list - a linked list with a head property, and nodes with a value and a next.
- * @param {Any} valueToRemove - a value to be removed from the list.
+ *  O(1) time complexity, at worst case we need to look at every node in the list.
+ *  O(1) space complexity, we create one new variable next that should be able to , 
+ * @param {Node} node - a data points to be removed from the list.
  */
-function removeNode(list, valueToRemove) {
+function removeNode(node) {
 
-  if (!list.head) {
-    throw new Error('List is empty');
+  if (!node || !node.next) {
+    throw new Error('Node input error');
   }
 
-  let current = list.head;
-
-  if (current.value === valueToRemove) {
-    list.head = current.next;
-    return list;
-  }
-
-  let previous = null;
-
-
-  while (current) {
-    if (current.value === valueToRemove) {
-      previous.next = current.next;
-      break;
-    }
-
-    previous = current;
-    current = current.next;
-  }
-
-  return list;
+  let next = node.next;
+  node.value = next.value;
+  node.next = next.next;
 }
-
-
-
 
 /**
  * Test function for asserting that two lists are equal in javascript
@@ -59,10 +37,12 @@ function removeNode(list, valueToRemove) {
  * @param {LinkedList} testList - LinkedList that will operated against.
  * @param {LinkedList} assertList - LinkedList that we assert should be our new Linked List after operation is complete.
  */
-const test = (string, value, testList, assertList) => {
+const test = (string, argument, value, assertValue) => {
 
-  const test = JSON.stringify(removeNode(testList, value));
-  const expected = JSON.stringify(assertList);
+  removeNode(argument);
+
+  const test = JSON.stringify(value);
+  const expected = JSON.stringify(assertValue);
 
   console.log(string, test === expected);
 }
@@ -74,7 +54,9 @@ valueInHead.head.next = new Node(3);
 let valueInHeadExpect = new LinkedList();
 valueInHeadExpect.head = new Node(3);
 
-test('Should remove the head from the list', 2, valueInHead, valueInHeadExpect);
+let nodeToRemove = valueInHead.head;
+
+test('Should remove the head from the list', nodeToRemove, valueInHead, valueInHeadExpect);
 
 let simpleList = new LinkedList();
 simpleList.head = new Node(1);
@@ -85,7 +67,9 @@ let simpleListExpect = new LinkedList();
 simpleListExpect.head = new Node(1);
 simpleListExpect.head.next = new Node(3);
 
-test('Should remove value from a small list', 2, simpleList, simpleListExpect);
+nodeToRemove = simpleList.head.next;
+
+test('Should remove node from a small list', nodeToRemove, simpleList, simpleListExpect);
 
 let duplicateList = new LinkedList();
 duplicateList.head = new Node(1);
@@ -100,4 +84,6 @@ duplicateExpect.head.next = new Node(2);
 duplicateExpect.head.next.next = new Node(4);
 duplicateExpect.head.next.next.next = new Node(3);
 
-test('should remove one item from the list even with duplicate values', 3, duplicateList, duplicateExpect);
+nodeToRemove = duplicateList.head.next.next;
+
+test('should remove one item from the list even with duplicate values', nodeToRemove, duplicateList, duplicateExpect);

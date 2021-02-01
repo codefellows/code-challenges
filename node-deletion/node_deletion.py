@@ -1,19 +1,12 @@
 from .linked_list import LinkedList
 
 
-def node_deletion(ll, val: int) -> None:
-    """Remove a node from within a linked list."""
-    if not ll.head:
-        raise ValueError("List is empty.")
+def node_deletion(node) -> None:
+    """Remove a node from within a linked list using only the node value"""
+    if not node or not node.next:
+        raise ValueError("Node input error")
 
-    curr = ll.head
-    prev = None
-    while curr:
-        if curr.val == val and curr == ll.head:
-            ll.head = curr.next
-            break
-        elif curr.val == val:
-            prev.next = curr.next
-            break
-        prev = curr
-        curr = curr.next
+    next = node
+    node.value = next.val
+    node.next = next.next
+
