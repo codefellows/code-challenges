@@ -1,37 +1,56 @@
-#! /usr/bin/python
+from codefellows.dsa.binary_tree import BinaryTree
 
-# TreeNode class for use in solving problem
-class TreeNode:
-  def __init__(self, value, left = None, right = None):
-    self.value = value;
-    self.left = left;
-    self.right = right;
 
-# Algorithm
-def has_path_weight(root, weight):
+def leaf_has_weight(root, target, weight_so_far=0):
+    """
+    Sums up weight each call and checks the weight when at leaf.
+    
+    If you need to have Tree input vs root 
+    then wrap in outer function and call with tree.root
+    """
+
+    if not root:
+      return False
+
+    my_weight = weight_so_far + root.value
+
+    if not root.left and not root.right:
+        return target == my_weight
+
+    return (leaf_has_weight(root.left, target, my_weight) or 
+            leaf_has_weight(root.right, target, my_weight))
+
+
+
+def test_leaf_weights():
+
+  """
+  Sample Tree:
+
+                (1)
+          (2)       (3)
+       (4)  (5)   (6)
+
+  """
+
+  tree = BinaryTree(values=[1,2,3,4,5,6])
+
+  assert leaf_has_weight(tree.root, 7)
+  assert leaf_has_weight(tree.root, 8)
+  assert leaf_has_weight(tree.root, 10)
+
+  assert not leaf_has_weight(tree.root, 1)
+  assert not leaf_has_weight(tree.root, 3)
+  assert not leaf_has_weight(tree.root, 4)
+
+
+def alt_leaf_has_weight(root, weight):
+  """
+  Reduces weight as you go vs. adding.
+  Added by Michelle Ferreirae 
+  Trickier to read (IMHO) than function above, but shows some cool features.
+  E.g. uses "any" built in function around a list comprehension maing recursive call
+  """
   if root == None: return False
   if (root.left == None) and (root.right == None): return weight == root.value
-  return any([has_path_weight(x, weight - root.value) for x in (root.left, root.right)])
-
-# Validation
-
-# Set up tree
-#      1
-#     / \
-#    3   4
-#   /   / \
-#  5    6  7
-
-tree = TreeNode(
-  1, 
-  TreeNode(3,TreeNode(5)),
-  TreeNode(4, TreeNode(6), TreeNode(7))
-)
-
-assert(has_path_weight(tree, 9))
-assert(has_path_weight(tree, 11))
-assert(has_path_weight(tree, 12))
-assert(not has_path_weight(tree, 4))
-assert(not has_path_weight(tree, 1))
-assert(not has_path_weight(tree, 5))
-assert(not has_path_weight(tree, 10))
+  return any([alt_leaf_has_weight(x, weight - root.value) for x in (root.left, root.right)])
