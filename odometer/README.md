@@ -39,4 +39,5 @@ Output:
 ### Hint
 
 * The preferred solution is to reverse the list, work in sequence adding 1 to each node's value and then carrying (or not) to the next one, and then re-reverse it.
-* This is an O(n) solution (3x traversal, but not nested)
+  * This is an O(n) solution (3x traversal, but not nested)
+* Alternatively, a recursive solution is O(n) with a single traversal.

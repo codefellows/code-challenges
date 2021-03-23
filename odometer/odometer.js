@@ -1,9 +1,9 @@
 'use strict';
 
 class Node {
-  constructor(value) {
+  constructor(value, next = null) {
     this.value = value;
-    this.next = null;
+    this.next = next;
   }
 }
 
@@ -69,11 +69,40 @@ class LinkedList {
 
       current = current.next;
 
-      !current && carry && this.append(1);
-
     }
 
+    carry && this.append(1);
     this.reverse();
+  }
+
+  // SOLUTION 2
+  increment_rec() {
+    // helper returns true if we need to carry
+    function _helper(node) {
+      if (node == null) {
+        // made it to the end, need to add 1
+        return true;
+      } else {
+        if (_helper(node.next)) {
+          // adding 1, and carrying if necessary
+          if (node.value == 9) {
+            node.value = 0;
+            return true;
+          } else {
+            node.value++;
+            return false;
+          }
+        } else {
+          // done adding 1, just keep returning
+          return false;
+        }
+      }
+    }
+
+    if(_helper(this.head)) {
+      // we must add a preceding 1
+      this.head = new Node(1, this.head);
+    }
   }
 
 }
@@ -90,3 +119,27 @@ list.increment();
 list.print();
 list.increment();
 list.print();
+
+
+let list2 = new LinkedList();
+
+list2.append(4);
+list2.append(9);
+list2.append(2);
+list2.append(9);
+
+list2.print();
+list2.increment_rec();
+list2.print();
+list2.increment_rec();
+list2.print();
+
+let list3 = new LinkedList();
+list3.print();
+list3.increment();
+list3.print();
+
+let list4 = new LinkedList();
+list4.print();
+list4.increment_rec();
+list4.print();
