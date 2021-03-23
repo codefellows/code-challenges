@@ -7,6 +7,6 @@ def node_deletion(node) -> None:
         raise ValueError("Node input error")
 
     next = node
-    node.value = next.val
+    node.val = next.val
     node.next = next.next
 
