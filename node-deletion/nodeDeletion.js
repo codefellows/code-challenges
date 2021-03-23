@@ -15,7 +15,7 @@ class LinkedList {
 
 /**
  * Remove a node in the middle of a singly linked list given only the value of the node to remove
- *  O(1) time complexity, at worst case we need to look at every node in the list.
+ *  O(1) time complexity, there is no need to look at every node in the list.
  *  O(1) space complexity, we create one new variable: next
  * @param {Node} node - the object to be removed from the list.
  */
