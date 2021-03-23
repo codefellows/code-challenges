@@ -17,7 +17,7 @@ class LinkedList {
  * Remove a node in the middle of a singly linked list given only the value of the node to remove
  *  O(1) time complexity, at worst case we need to look at every node in the list.
  *  O(1) space complexity, we create one new variable next that should be able to , 
- * @param {Node} node - a data points to be removed from the list.
+ * @param {Node} node - the object to be removed from the list.
  */
 function removeNode(node) {
 
