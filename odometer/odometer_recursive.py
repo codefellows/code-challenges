@@ -8,9 +8,7 @@ def increment(list_):
       return 1
 
     carry = traverse(node.next)
-
     node.value += carry
-
     carry = 0
 
     if node.value > 9:
