@@ -1,36 +1,49 @@
 # Reconstruct a Flight Path
 
-_Source: given as an interview question for interns at Google circa 2012_
+> Source: given as an interview question for interns at Google circa 2012
 
-You are given a stack that contains `PlaneTicket` instances; each ticket has an `Origin` and a `Destination`. This stack represents a single multi-city itinerary flown by a single person. Reconstruct that person's flight path, and return to me the cities they visited, in the order they visited them.
+You are given an array of `PlaneTicket` instances; each ticket has an `Origin` and a `Destination`. These tickets represents a single multi-city itinerary flown by a single person. Reconstruct the person's flight path to return the cities visited in the order they were flown to.
 
 ## Example input/output (do not give unless explicitly asked)
 
-Input: [ JFK->IAD, SFO->JFK, IAD->ORD, SEA->SFO ]
-Output: [ SEA, SFO, JFK, IAD, ORD ]
+Input: [
+  PlaneTicket(origin="SEA",destination="SFO"),
+  PlaneTicket(origin="JFK",destination="IAD"),
+  PlaneTicket(origin="SFO",destination="JFK"),
+  PlaneTicket(origin="IAD",destination="ORD"),
+]
+Output: [ "SEA", "SFO", "JFK", "IAD", "ORD" ]
 
 ## Notes
 
-This question uses a "stack" of plane tickets only for fun; the stack has no inherent meaning.
-
-Each city appears at most twice in the stack of tickets: once as a destination, and once as an origin.
+Each city appears at most twice in the list of tickets: once as a destination, and once as an origin.
 
 Every ticket will be used exactly once in creating the correct itinerary.
 
 You can assume that the origin and destination are airport codes, or cities, or whatever... but you're guaranteed that they'll be unique.
 
-Output type should be a List, but could be an array if they're struggling with a List.
+Output type should be an array of strings.
+
+Depending on language, the `PlaneTicket` instance could be be a simple Dictionary/Object, but should have have origin & destination as keys/properties.
 
 ### Secrets for the Interviewer
 
+There are multiple ways to approach this problem. But they usually revolve around solving 2 sub-problems.
+
+### Find Starting Ticket
+
+The first task is to determine which ticket represents the start of the trip.
+
+An efficient way to do this is to make a set of destiations then iterate through the tickets looking for the ticket with an origin that is NOT also a destination.
+
+This can also be accomplished by finding the difference of the origin set and destination set, if language supports set operations.
+
+Could also be done with nested iteration, though it is less efficient.
+
 This question is actually about reconstructing a LinkedList given only the edges.
 
-A few different solutions that work:
+### Generate Array of Airport Codes
 
-- Take the first ticket from the stack; make that the current ticket. Then, repeatedly traverse the stack to look for the ticket that has the origin matching the current ticket's destination, remove from the stack, and make it the current ticket; also do the same backwards, once you've reached the end of the itinerary. Runtime O(n^2).
+Once starting ticket has been identified then the task is to gather list of Airport codes in proper order. This can be efficiently handled by converting array of `PlaneTicket` instances to a HashTable where key is `origin` and `value` is destination.
 
-- Make a map from the city names to the count of number of times they appear in the tickets (O(n)), so you can find the start and end (which are the cities with a count of 1). Traverse the stack to find one of those tickets, and then go either forwards or backwards through all of the tickets. Still O(n^2), but often makes more sense to people.
-
-- Traverse the stack once and create a map from the city names to the ticket with an origin of that city (O(n)), and then use that map instead of traversing the stack repeatedly, to make it a O(n) solution.
-
-- Traverse the stack once and create a map from city names to BOTH tickets that reference that city (using a Pair or similar).
+Less efficiently it's possible to find the corresponding plane ticket each time through the loop.
