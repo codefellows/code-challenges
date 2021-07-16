@@ -1,6 +1,5 @@
 from codefellows.dsa.binary_tree import BinaryTree, Node
 from codefellows.dsa.queue import Queue
-from codefellows.dsa.stack import Stack
 
 def reverse_level_order(tree):
   """Uses a modified Breadth First Search
@@ -14,13 +13,13 @@ def reverse_level_order(tree):
       list: values in reverse level order
   """
   q = Queue()
-  stack = Stack()
+  values = []
 
   q.enqueue(tree.root)
 
   while q:
     node = q.dequeue()
-    stack.push(node.value)
+    values.append(node.value)
 
     # make sure to enqueue right then left
     # for proper ordering of output
@@ -31,12 +30,9 @@ def reverse_level_order(tree):
     if node.left:
       q.enqueue(node.left)
 
-  # pop stack to reverse the values
-  output = []
-  while stack:
-    output.append(stack.pop())
 
-  return output
+  # reverse order to get from "bottom" layer on up
+  return values[::-1]
 
 
 ########################
