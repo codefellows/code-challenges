@@ -7,9 +7,9 @@ You are given an array of `PlaneTicket` instances; each ticket has an `Origin` a
 ## Example input/output (do not give unless explicitly asked)
 
 Input: [
-  PlaneTicket(origin="SEA",destination="SFO"),
   PlaneTicket(origin="JFK",destination="IAD"),
   PlaneTicket(origin="SFO",destination="JFK"),
+  PlaneTicket(origin="SEA",destination="SFO"),
   PlaneTicket(origin="IAD",destination="ORD"),
 ]
 Output: [ "SEA", "SFO", "JFK", "IAD", "ORD" ]
