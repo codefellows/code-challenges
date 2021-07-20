@@ -34,9 +34,9 @@ There are multiple ways to approach this problem. But they usually revolve aroun
 
 The first task is to determine which ticket represents the start of the trip.
 
-An efficient way to do this is to make a set of destiations then iterate through the tickets looking for the ticket with an origin that is NOT also a destination.
+An efficient way to do this is to make a set of destiations then iterate through the tickets looking for the ticket with an origin that is NOT also a destination existing in the set.
 
-This can also be accomplished by finding the difference of the origin set and destination set, if language supports set operations.
+This can also be accomplished by finding the difference of an origin set and a destination set, if the candidate's language supports set operations.
 
 Could also be done with nested iteration, though it is less efficient.
 
