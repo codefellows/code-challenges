@@ -44,7 +44,7 @@ class LinkedList {
    */
   dedupe() {
 
-    let seen = new Map();
+    let seen = new Set();
     let current = this.head;
     let previous = current;
 
@@ -53,7 +53,7 @@ class LinkedList {
         previous.next = current.next;
       }
       else {
-        seen.set(current.value);
+        seen.add(current.value);
         previous = current;
       }
       current = current.next;
