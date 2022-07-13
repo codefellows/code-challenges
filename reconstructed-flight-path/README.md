@@ -6,13 +6,16 @@ You are given an array of `PlaneTicket` instances; each ticket has an `Origin` a
 
 ## Example input/output (do not give unless explicitly asked)
 
-Input: [
-  PlaneTicket(origin="JFK",destination="IAD"),
-  PlaneTicket(origin="SFO",destination="JFK"),
-  PlaneTicket(origin="SEA",destination="SFO"),
-  PlaneTicket(origin="IAD",destination="ORD"),
-]
-Output: [ "SEA", "SFO", "JFK", "IAD", "ORD" ]
+**Inputs**
+
+* A PlaneTicket with origin "JFK" and destination "IAD"
+* A PlaneTicket with origin "SFO" and destination "JFK"
+* A PlaneTicket with origin "SEA" and destination "SFO"
+* A PlaneTicket with origin "IAD" and destination "ORD"
+
+**Outputs**
+
+* [ "SEA", "SFO", "JFK", "IAD", "ORD" ]
 
 ## Notes
 
