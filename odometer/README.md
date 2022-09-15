@@ -1,6 +1,6 @@
 # Linked List Odometer
 
-Given a linked list of positive numbers, write a method, that "adds one" to the "number" represented by the list, like an odometer
+Given a linked list of positive single digit numbers, write a method, that "adds one" to the "number" represented by the list, like an odometer
 
 ## Sample inputs and outputs
 
