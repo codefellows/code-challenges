@@ -44,6 +44,8 @@ let sortFlightPath = tickets => {
   if (tickets.length === 0) return [];
   
   // Make a copy of the tickets array, so as not to change the input array.
+  tickets = [...tickets]
+  
   // Sort the array:
   //   A ticket that has an origin as another ticket's destination comes to the right
   //   Vice versa: A ticket that has a destination the same as the other ticket's origin comes to the left
@@ -53,7 +55,7 @@ let sortFlightPath = tickets => {
   // final collation will not include the later origins. Loop flight paths will be in the correct order for
   // the loop, but it's unclear where the initial item will be.
   // (The problem as stated in the readme will not have loops or disjoints).
-  tickets = [...tickets].sort((a, b) => {
+  tickets.sort((a, b) => {
     if (a.origin === b.destination) return 1;
     if (a.destination === b.origin) return -1;
     return 0;
