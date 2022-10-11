@@ -53,7 +53,7 @@ let sortFlightPath = tickets => {
   // final collation will not include the later origins. Loop flight paths will be in the correct order for
   // the loop, but it's unclear where the initial item will be.
   // (The problem as stated in the readme will not have loops or disjoints).
-  [...tickets].sort((a, b) => {
+  tickets = [...tickets].sort((a, b) => {
     if (a.origin === b.destination) return 1;
     if (a.destination === b.origin) return -1;
     return 0;
