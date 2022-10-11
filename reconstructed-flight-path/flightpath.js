@@ -39,6 +39,30 @@ let getFlightPath = tickets => {
 
 }
 
+let sortFlightPath = tickets => {
+  // This version has an unconditional access to item 0, so needs to check empty input.
+  if (tickets.length === 0) return [];
+  
+  // Make a copy of the tickets array, so as not to change the input array.
+  // Sort the array:
+  //   A ticket that has an origin as another ticket's destination comes to the right
+  //   Vice versa: A ticket that has a destination the same as the other ticket's origin comes to the left
+  //   Otherwise, return 0. 0 can mean equal, but more generally, it means "don't sort one way or the other"
+  //      when comparing these two items. Other items will compare differently.
+  // This is _not_ a total ordering. Disjoint flight paths will sort into two (or more) sequences, but the
+  // final collation will not include the later origins. Loop flight paths will be in the correct order for
+  // the loop, but it's unclear where the initial item will be.
+  // (The problem as stated in the readme will not have loops or disjoints).
+  [...tickets].sort((a, b) => {
+    if (a.origin === b.destination) return 1;
+    if (a.destination === b.origin) return -1;
+    return 0;
+  });
+  
+  // Collate the cities - the first ticket origin, and then every destination.
+  return [tickets[0].origin, ...tickets.map(t => t.destination)];
+}
+
 
 let paths = [
   { origin: 'SEA', destination: 'SFO' },
@@ -48,3 +72,4 @@ let paths = [
 ];
 
 console.log(getFlightPath(paths));
+console.log(sortFlightPath(paths));
