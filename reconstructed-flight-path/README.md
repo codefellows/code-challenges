@@ -33,7 +33,7 @@ Depending on language, the `PlaneTicket` instance could be be a simple Dictionar
 
 There are multiple ways to approach this problem. But they usually revolve around solving 2 sub-problems.
 
-### Find Starting Ticket
+#### Find Starting Ticket
 
 The first task is to determine which ticket represents the start of the trip.
 
@@ -45,8 +45,12 @@ Could also be done with nested iteration, though it is less efficient.
 
 This question is actually about reconstructing a LinkedList given only the edges.
 
-### Generate Array of Airport Codes
+#### Generate Array of Airport Codes
 
 Once starting ticket has been identified then the task is to gather list of Airport codes in proper order. This can be efficiently handled by converting array of `PlaneTicket` instances to a HashTable where key is `origin` and `value` is destination.
 
 Less efficiently it's possible to find the corresponding plane ticket each time through the loop.
+
+### Sorting
+
+The question can be solved directly and expressively using each language's built in Comparator sorting mechanism. This requires a compare function that returns less than 0 for a.origin == b.destination, greater than 0 for a.destination === b.origin, or 0 otherwise. (Idiomatically, that's -1, 1, and 0). Note that a second pass will be required to pull the first origin and then all destinations. The analysis should be "Whatever the runtime provides" which is perfectly acceptable! But they should recognize that for most languages, that is probably O(N log N) for runtime and either O(1) or O(n) for space, depending on whether the runtime does it in-place or with a new array.
