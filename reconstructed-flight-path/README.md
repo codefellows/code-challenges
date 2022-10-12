@@ -8,14 +8,14 @@ You are given an array of `PlaneTicket` instances; each ticket has an `Origin` a
 
 **Inputs**
 
-* A PlaneTicket with origin "JFK" and destination "IAD"
-* A PlaneTicket with origin "SFO" and destination "JFK"
-* A PlaneTicket with origin "SEA" and destination "SFO"
-* A PlaneTicket with origin "IAD" and destination "ORD"
+* A PlaneTicket with origin "New York City" and destination "Washington, DC"
+* A PlaneTicket with origin "San Francisco" and destination "New York City"
+* A PlaneTicket with origin "Seattle" and destination "San Francisco"
+* A PlaneTicket with origin "Washington, DC" and destination "Chicago"
 
 **Outputs**
 
-* [ "SEA", "SFO", "JFK", "IAD", "ORD" ]
+* [ "Seattle", "San Francisco", "New York City", "Washington, DC", "Chicago" ]
 
 ## Notes
 
