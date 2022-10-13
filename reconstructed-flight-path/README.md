@@ -54,3 +54,41 @@ Less efficiently it's possible to find the corresponding plane ticket each time 
 ### Sorting
 
 The question can be solved directly and expressively using each language's built in Comparator sorting mechanism. This requires a compare function that returns less than 0 for a.origin == b.destination, greater than 0 for a.destination === b.origin, or 0 otherwise. (Idiomatically, that's -1, 1, and 0). Note that a second pass will be required to pull the first origin and then all destinations. The analysis should be "Whatever the runtime provides" which is perfectly acceptable! But they should recognize that for most languages, that is probably O(N log N) for runtime and either O(1) or O(n) for space, depending on whether the runtime does it in-place or with a new array.
+
+## Language Gimmies
+
+If the student wants to write a data class, provide these (depending on language). If they want to use a tuple or dict, that's fine too.
+
+### Python
+
+```python 
+class PlaneTicket:
+  def __init__(self, origin, destination):
+    self.origin = origin
+    self.destination = destination
+```
+
+### Java
+
+```java
+public class PlaneTicket {
+  String origin;
+  String destination;
+  
+  // constructor, accessors
+}
+```
+
+### JavaScript
+
+```javascript
+{origin: "", destination: ""}
+```
+
+### TypeScript
+
+```typescript
+class PlaneTicket {
+  constructor(readonly origin: string, readonly destination: string) {}
+}
+```
