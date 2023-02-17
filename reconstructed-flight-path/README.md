@@ -1,10 +1,11 @@
 # Reconstruct a Flight Path
 
-> Source: given as an interview question for interns at Google circa 2012
+> I'm a business traveller with several legs on my trip. Each leg has a plane ticket with the origin and destination for the flight. At security, I dropped all my tickets! Now they're in a jumbled mess! Please write a function that takes these tickets, and tells me the list of cities that I will visit, in order.
 
-You are given an array of `PlaneTicket` instances; each ticket has an `Origin` and a `Destination`. These tickets represents a single multi-city itinerary flown by a single person. Reconstruct the person's flight path to return the cities visited in the order they were flown to.
 
-## Example input/output (do not give unless explicitly asked)
+## Example input/output
+
+If the candidate hasn't asked for these by about the 5 minute mark, politely ask whether they would like a specific example.
 
 **Inputs**
 
@@ -17,19 +18,29 @@ You are given an array of `PlaneTicket` instances; each ticket has an `Origin` a
 
 * [ "Seattle", "San Francisco", "New York City", "Washington, DC", "Chicago" ]
 
-## Notes
+## FAQs
+
+> Will there be any loops?
 
 Each city appears at most twice in the list of tickets: once as a destination, and once as an origin.
 
+> Are there any extra tickets?
+
 Every ticket will be used exactly once in creating the correct itinerary.
+
+> Does every origin and destination line up?
 
 You can assume that the origin and destination are airport codes, or cities, or whatever... but you're guaranteed that they'll be unique.
 
+> Do I return the tickets in order?
+
 Output type should be an array of strings.
 
-Depending on language, the `PlaneTicket` instance could be be a simple Dictionary/Object, but should have have origin & destination as keys/properties.
+> How should I represent this?
 
-### Secrets for the Interviewer
+Depending on language, the `PlaneTicket` instance could be be a simple Dictionary/Object, but should have have origin & destination as keys/properties. It might be more natural to represent tham as a class, [see below](#Language Gimmies)
+
+### Iterative + Map Solution
 
 There are multiple ways to approach this problem. But they usually revolve around solving 2 sub-problems.
 
@@ -51,9 +62,34 @@ Once starting ticket has been identified then the task is to gather list of Airp
 
 Less efficiently it's possible to find the corresponding plane ticket each time through the loop.
 
+#### Pseudocode
+
+```
+function Ticket Sorter
+has argument List of Tickets
+create Ticket Map from List, where each Ticket is an Entry with Key Origin and value Destination
+starting city is the city in Ticket Map Keys that is not in Ticket Map Value
+  (that is, Set Ticket Map Keys - Set Ticket Map Values)
+initialize Return Array with starting city
+set Current City to Ticket Map's value at key Starting City
+while Current City is not null
+  push Current City into Return Array
+  set Curent City to Ticket Map's value at key Current City
+```
+
 ### Sorting
 
 The question can be solved directly and expressively using each language's built in Comparator sorting mechanism. This requires a compare function that returns less than 0 for a.origin == b.destination, greater than 0 for a.destination === b.origin, or 0 otherwise. (Idiomatically, that's -1, 1, and 0). Note that a second pass will be required to pull the first origin and then all destinations. The analysis should be "Whatever the runtime provides" which is perfectly acceptable! But they should recognize that for most languages, that is probably O(N log N) for runtime and either O(1) or O(n) for space, depending on whether the runtime does it in-place or with a new array.
+
+#### Pseudocode
+
+```
+function Ticket Comparison
+has arguments Ticket A, Ticket B
+returns 1 (Sort A to the Right) if Ticket A's Origin is Ticket B's Destination.
+returns -1 (Sort A to the Left) if Ticket A's Destination is Ticket B's Origin.
+returns 0 (No evaluation of sort order) otherwise.
+```
 
 ## Language Gimmies
 
@@ -85,10 +121,22 @@ public class PlaneTicket {
 {origin: "", destination: ""}
 ```
 
+```
+class PlaneTicket {
+  constructor(origin, destination) {
+    this.origin = origin;
+    this.destination = destination;
+  }
+}
+```
+
 ### TypeScript
 
 ```typescript
 class PlaneTicket {
-  constructor(readonly origin: string, readonly destination: string) {}
+  constructor(
+    readonly origin: string,
+    readonly destination: string
+  ) {}
 }
 ```
