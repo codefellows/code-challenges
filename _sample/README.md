@@ -4,7 +4,7 @@
 
 ## Example input/output
 
-If the candidate hasn't asked for these by about the 5 minute mark, politely ask whether they would like a specific example.
+If the candidate hasn't asked for test cases by about the 5 minute mark, politely ask whether they would like a specific example.
 
 **Inputs**
 
@@ -16,13 +16,13 @@ If the candidate hasn't asked for these by about the 5 minute mark, politely ask
 
 ## Suggested data model
 
-If the candidate hasn't settled on a data model for the input and output by 10 minutes, suggest this data model.
+If the candidate hasn't provided a data model for the input and output by about the 10 minute mark, suggest this data model.
 
 { Data model summary, see languages for details }
 
 ## Suggested algorithm
 
-If the candidate hasn't settled on an algorithm by the 20 minute mark, suggest an algorithm below.
+If the candidate hasn't made sufficient progress on the algorithm by about the 20 minute mark, suggest an algorithm below as a hint.
 
 ### { Solution 1 }
 
