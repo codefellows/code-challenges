@@ -2,7 +2,7 @@ def reconstruct_flight_path(tickets):
     tickets = dict(tickets)
     current = List(Set(tickets.keys()) - Set(tickets.values()))[0]
 
-    airports = [curtent]
+    airports = [current]
     while current:
         current = tickets[current]
         airports.append(current)
