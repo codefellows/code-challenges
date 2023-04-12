@@ -20,6 +20,27 @@ If the candidate hasn't provided a data model for the input and output by about 
 
 { Data model summary, see languages for details }
 
+### Python
+
+```python
+class Foo:
+  pass
+```
+
+### Java
+
+```java
+class Foo {
+  Foo() {}
+}
+```
+
+### JavaScript / TypeScript
+
+```javascript
+{}
+```
+
 ## Suggested algorithm
 
 If the candidate hasn't made sufficient progress on the algorithm by about the 20 minute mark, suggest an algorithm below as a hint.
