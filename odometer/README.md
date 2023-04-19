@@ -12,65 +12,101 @@ Only 1 value needs to change at the end of the list.
 
 **Inputs**
 
-```javascript
+```text
 4 -> 3 -> 9 -> 5
 ```
 
 **Outputs**
 
-```javascript
+```text
 4 -> 3 -> 9 -> 6
 ```
 
-### Example 2: Smallest meaningful change
+### Example 2: Single Digit Rollover
 
 The value at the end of the list is a `9`, causing the preceding number to be incremented, and the `9` switched to a `0`.
 
 **Inputs**
 
-```javascript
+```text
 4 -> 3 -> 4 -> 9
-
 ```
 
 **Outputs**
 
-```javascript
+```text
 4 -> 3 -> 5 -> 0
 ```
 
-### Example 3: Worst Case
+### Example 3: Multi Digit Rollover
 
 All numbers need to be updated and an extra digit is appended to the front of the list with the value of `1`.
 
 **Inputs**
 
-```javascript
+```text
 9 -> 9 -> 9 -> 9
 ```
 
 **Outputs**
 
-```javascript
- 1 -> 0 -> 0 -> 0 -> 0
+```text
+1 -> 0 -> 0 -> 0 -> 0
 ```
 
 ## Suggested data model
 
 If the candidate hasn't provided a data model for the input and output by about the 10 minute mark, suggest this data model.
 
+### Python
+
+```python
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+```
+
+### Java
+
+```Java
+
+public class LinkedList {
+  Node head;
+
+  static class Node {
+    int value;
+    Node next;
+
+    Node(int value) {
+      value = value;
+      next = null;
+    }
+  }
+}
+
+```
+
+### JavaScript
+
 ```javascript
 
 class LinkedList {
   constructor() {
-    this.head<Node|Null> = null;
+    this.head = null;
   }
 }
 
 class Node {
-  constructor(value<any>) {
-    this.value<any> = value;
-    this.next<Node|null> = null;
+  constructor(value) {
+    this.value = value;
+    this.next = null;
   }
 }
 ```
@@ -81,7 +117,7 @@ If the candidate hasn't made sufficient progress on the algorithm by about the 2
 
 ### Reverse the List and Increment the Head
 
-This solution allows us to traverse the list once at the beginning to get to the value that we need to increment,  and work backwards.  If the number at the end can be incremented without modifying the rest of values we can  
+This solution allows us to traverse the list once, reversing the list at the beginning so we start with the value that needs to be incremented.  From there we can and work backwards if we need to "rollover" digits past the the head node.  If the number at the end can be incremented without modifying the rest of values we can easily modify the reversed list's head and return the list.  If we encounter values that require us to change more node values,  we simply traverse until we no longer need to update values,  or add a new node the end of the list if all node integer values require a "rollover".
 
 #### Algorithm
 
@@ -89,23 +125,27 @@ Reverse the list so that the value that we need to increment is at the front of 
 
 #### Pseudocode
 
-```javascript
+```text
 
-declare method increment:
-  declare List list -> input linked list
-  list.reverse()
+function Increment has argument List of numbers
 
-  declare Node current set to List.head
-  declare Boolean carried set to true
+initialize Node current to List.head
+call in-place reverse on List
+initialize boolean carried to false
 
-  while current is not null:
-    if carried over is true
-      increment current value if less than 9 and set carried to false
-      if value is 9, set to zero and continue
+while current is not null:
+  if carried is true
+    if current.value less than 9
+      increment current.value
+      set carried to true
+    else if current.value is 9
+      set current.value to 0
 
-  if carried is true outside of loop:
-    list.append(1)
-  return list.reverse()
+if carried is true outside of loop:
+  append 1 to List
+
+call in-place reverse on List
+return List
 
 ```
 
@@ -116,7 +156,7 @@ Time Complexity:  O(n) We need to check every value stored in the list.
 
 > What is an odometer?
 
-An odometer is an numerical display used to calculate mileage traveled in a vehicle.  The display has a maximum length of digits and it always displays an integer for a given digit position.  For example, a sample odometer starts at `000000` and when 1 mile is driven it displays `000001`, and continues until all possible digits display a maximum value of `999999`. In this scenario we require an odometer that can add an extra digit to display `1000000`.
+An odometer is an numerical display used to calculate mileage traveled in a vehicle.  The display has a maximum length of digits and it always displays a single digit integer for a given digit position.  For example, a sample odometer starts at `000000` and when 1 mile is driven it displays `000001`, and continues until all possible digits display a maximum value of `999999`. In this scenario we require an odometer that can add an extra digit to display `1000000`.
 
 > What values will the list contain?
 
