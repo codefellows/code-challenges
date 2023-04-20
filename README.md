@@ -26,7 +26,7 @@ These are final white board challenges, worked solutions, and discussions.
 
 ### Trees
 
-- [Matching Leaves](./matching_leafs)
+- [Matching Leaves](./matching-leafs)
 - [Merge Binary Trees](./merge-two-binary-trees)
 - [Reconstructed BST from In-Order Traversal](./reconstructed-tree)
 - [Root to Leaf in a Binary Tree](./binary-root-leaf)
