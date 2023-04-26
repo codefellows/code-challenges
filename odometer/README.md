@@ -152,6 +152,46 @@ return List
 Space Complexity: O(1) We only need to store a value for the current node.  
 Time Complexity:  O(n) We need to check every value stored in the list.
 
+### Use Recursion to carry a digit
+
+A second method might involve recursively traversing the "Odometer" digits and carrying a `1` or a `0` to the next recursive call to tell our function whether our digit needs to "increment" and perhaps "rollover" if we are at the end of the list and we are still carrying a `1`.
+
+#### Algorithm
+
+Our recursive function will receive a node.  And we need to recursively call our function until we reach our last node, and if we reach the last node we check the value and if we are at a `9`, flip to a `0` and return `1` up the call stack.  If the next recursive invocation receives a `1` we know we need to modify our current node, and again check if we are at a `9` and required to carry a `1` up the call stack.  If we reach the head node and our value still requires a "rollover" and we have a `9` at the head, we will insert a new node with the carried `1`.
+
+#### Pseudocode
+
+```text
+
+function Recursive Increment has argument List of numbers
+
+define Number carry as return value from recursive traversal function called on List.head
+
+define helper function to traverse that takes in a Node.
+
+  if Node is null return 1
+
+  define carry as return value of traversal called on Node.next
+  if node.value is equal to 9
+    set node.value to 0
+    set carry to 1
+  else 
+    add 1 to node.value
+    set carry to 0
+  
+  return carry
+
+if carry equals 1
+    insert carry at head node
+
+return list
+
+```
+
+Space Complexity: O(n) Not only are we storing a number for carry, we are also storing a carry value for every node in the list as we call the function recursively.  
+Time Complexity:  O(n) We need to check every value stored in the list.
+
 ## FAQs
 
 > What is an odometer?
