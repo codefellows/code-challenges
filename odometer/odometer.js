@@ -55,11 +55,16 @@ class LinkedList {
   // SOLUTION //
   increment() {
 
-    this.reverse();
-
     let current = this.head;
+    let reverse = [];
+
+    while (current) {
+      reverse.push(current);
+      current = current.next;
+    }
 
     let carry = true;
+    current = reverse.pop();
 
     while(current) {
 
@@ -67,12 +72,11 @@ class LinkedList {
         carry = !(current.value = ++current.value % 10);
       }
 
-      current = current.next;
+      current = reverse.pop();
 
     }
 
     carry && this.append(1);
-    this.reverse();
   }
 
   // SOLUTION 2
