@@ -54,29 +54,25 @@ class LinkedList {
 
   // SOLUTION //
   increment() {
+    
+    this.reverse();
 
     let current = this.head;
-    let reverse = [];
-
-    while (current) {
-      reverse.push(current);
-      current = current.next;
-    }
 
     let carry = true;
-    current = reverse.pop();
 
-    while(current) {
+    while (current) {
 
-      if ( carry ) {
+      if (carry) {
         carry = !(current.value = ++current.value % 10);
       }
 
-      current = reverse.pop();
+      current = current.next;
 
     }
 
     carry && this.append(1);
+    this.reverse();
   }
 
   // SOLUTION 2
@@ -109,6 +105,19 @@ class LinkedList {
     }
   }
 
+}
+
+// simple list reversal
+function reverseList(list) {
+
+  let reverse = []; // new Stack();
+
+  while(current) {
+    reverse.push(current);
+    current = current.next;
+  }
+
+  return reverse; // return reverse order list
 }
 
 let list = new LinkedList();
