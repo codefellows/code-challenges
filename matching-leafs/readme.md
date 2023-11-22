@@ -210,7 +210,8 @@ main function compareTrees
     parameter node <- root node
     parameter callback <- function to use while traversing
     if node is not undefined or null
-      pass node to callback -> if this returns false, stop program and return false
+      if node does not have a left or right child
+        pass node to callback -> if this returns false, stop program and return false
       traverse node.left
       traverse node.right
 
