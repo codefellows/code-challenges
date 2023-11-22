@@ -130,6 +130,8 @@ false
 
 If the student wants to write a data class, provide these (depending on language).
 
+### Python
+
 ```python 
 class TreeNode:
   def __init__(value):
@@ -202,7 +204,7 @@ main function compareTrees
 
   define function doesValueExist
     parameter node <- TreeNode
-    return the boolean from values.has(node) method
+    return the boolean from values.has(node.value) method
 
   define function traverse
     parameter node <- root node
