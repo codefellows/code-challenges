@@ -10,50 +10,15 @@ If the candidate hasn't asked for a test cases by about the 5 minute mark, polit
 
 **Inputs**
 
-* TreeA
-```json
- {
-  "value": 1,
-  "left": {
-    "value": 2,
-    "left": {
-      "value" : 4,
-      "left": null,
-      "right": {
-        "value": 5,
-        "left": null,
-        "right": null
-      }
-    },
-    "right": null
-  },
-  "right": {
-    "value": 3,
-    "left": {
-      "value": 6,
-      "left": null,
-      "right": null
-    },
-    "right": null
-  }
-}
-```
-
-* Tree B
-```json
-{
-  "value": 1,
-  "left": {
-    "value": 5,
-    "left": null,
-    "right": null
-  },
-  "right": {
-    "value": 6,
-    "left": null,
-    "right": null
-  }
-}
+```text
+    Tree A                Tree B
+      1                    1
+     / \                  / \
+    2   3                5   6
+   /   /
+  4   6
+   \
+    5
 ```
 
 **Outputs**
@@ -66,58 +31,15 @@ true
 
 **Input**
 
-* Tree A
-```json
- {
-  "value": 1,
-  "left": {
-    "value": 2,
-    "left": {
-      "value" : 4,
-      "left": null,
-      "right": {
-        "value": 7,
-        "left": null,
-        "right": null
-      }
-    },
-    "right": null
-  },
-  "right": {
-    "value": 3,
-    "left": {
-      "value": 6,
-      "left": null,
-      "right": null
-    },
-    "right": {
-      "value": 8,
-      "left": null,
-      "right": null
-    }
-  }
-}
-```
-
-* Tree B
-```json
-{
-  "value": 1,
-  "left": {
-    "value": 5,
-    "left": {
-      "value": 7,
-      "left": null,
-      "right": null
-    },
-    "right": null
-  },
-  "right": {
-    "value": 6,
-    "left": null,
-    "right": null
-  }
-}
+```text
+  Tree 3                  Tree 4
+    1                        1
+   / \                      / \
+  2   3                    5   6
+ /     \                      /
+4       6                    7
+ \       \                  
+  7       8
 ```
 
 **Outputs**
@@ -132,7 +54,7 @@ If the student wants to write a data class, provide these (depending on language
 
 ### Python
 
-```python 
+```python
 class TreeNode:
   def __init__(value):
     self.value = value
