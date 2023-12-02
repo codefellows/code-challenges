@@ -148,6 +148,10 @@ main function compareTrees
 
 ## FAQs
 
+> Are the inputs Tree or TreeNode instances?
+
+Input can be either Tree instances, or TreeNode instances, depending on student preference. But this choice **must** be clearly stated and documented.
+
 > What data type does the tree hold?
 
 To keep things simple you can assume all values in the tree will be integers.
