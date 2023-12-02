@@ -55,7 +55,7 @@ If the candidate hasn't provided a data model for the input and output by about 
 ### Python
 
 ```python
-class LinkedList:
+class Numeral:
     def __init__(self, character, value):
         self.character = character
         self.value = value
@@ -119,8 +119,13 @@ main function numeralToInteger
       if first is greater or equal to second
         add first to the totalSum
       else
+
+        // either...
         subtract first from second and add the result to totalSum
         increment index position to skip over second on next iteration
+
+        // alternately (to avoid skipping)...
+        subtract first from the total sum
 
     else
       add first to the totalSum
